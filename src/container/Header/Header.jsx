@@ -1,9 +1,9 @@
-import React from 'react';
-import './Header.scss';
+import React from "react";
+import "./Header.scss";
 
-import { motion } from 'framer-motion';
-import { images } from '../../constants';
-import { AppWrap } from '../../wrapper';
+import { motion } from "framer-motion";
+import { images } from "../../constants";
+import { AppWrap } from "../../wrapper";
 
 const scaleVariants = {
   whileInView: {
@@ -11,7 +11,7 @@ const scaleVariants = {
     opacity: [0, 1],
     transition: {
       duration: 1,
-      ease: 'easeInOut',
+      ease: "easeInOut",
     },
   },
 };
@@ -42,29 +42,34 @@ const Header = () => {
         transition={{ duration: 0.5, delayChildren: 0.5 }}
         className='app__header-img'
       >
-        <img src={images.profile} alt='profile_bg' />
-        <motion.img
-          whileInView={{ scale: [0, 1] }}
-          transition={{ duration: 1, ease: 'easeInOut' }}
-          className='overlay_circle'
-          src={images.circle}
-          alt='profile_circle'
-          c
-        />
+        <img src={""} alt='profile_bg' />
       </motion.div>
       <motion.div
         variant={scaleVariants}
         whileInView={scaleVariants.whileInView}
         className='app__header-circles'
       >
-        {[images.flutter, images.redux, images.sass].map((circle, index) => (
-          <div className='circle-cmp app__flex' key={`circle-${index}`}>
-            <img src={circle} alt='circle' />
+        <div className='circle-cmp0 '>
+          <div className='circle1'>
+            <img src={images.sass} alt='circle' />
           </div>
-        ))}
+          <div className='circle2'>
+            <img src={images.tailwind} alt='circle' />
+          </div>
+        </div>
+        <div className='circle-cmp1 app__flex'>
+          <img src={images.html} alt='circle' />
+        </div>
+
+        <div className='circle-cmp2 app__flex'>
+          <img src={images.flutter} alt='circle' />
+        </div>
+        <div className='circle-cmp3 app__flex'>
+          <img src={images.sass} alt='circle' />
+        </div>
       </motion.div>
     </div>
   );
 };
 
-export default AppWrap(Header, 'home');
+export default AppWrap(Header, "home");

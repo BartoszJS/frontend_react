@@ -1,6 +1,6 @@
 #home {
   position: relative;
-  background: url('../../assets/bgIMG.png');
+  background: url("../../assets/big-screen.jpg");
   background-size: cover;
   background-repeat: repeat;
   background-position: center;
@@ -89,7 +89,7 @@
 }
 
 .app__header-circles {
-  flex: 0.75;
+  flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -109,17 +109,53 @@
       height: 60%;
     }
   }
+  .circle-cmp0 {
+    width: 120px;
+    height: 120px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    background-color: white;
+    background-image: url("../../assets/css.png");
+    background-position: center;
+    background-size: 100px 100px;
+    background-repeat: no-repeat;
 
-  div:nth-child(1) {
+    .circle1 {
+      grid-area: 4 / 1 / 5 / 2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 40px;
+      height: 40px;
+    }
+    .circle2 {
+      grid-area: 4 / 3 / 5 / 4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      width: 40px;
+      height: 40px;
+    }
+    img {
+      width: 35px;
+      height: 35px;
+    }
+  }
+
+  .circle-cmp1 {
+    margin-left: 200px;
     width: 100px;
     height: 100px;
   }
-  div:nth-child(2) {
-    margin: 1.75rem;
+  .circle-cmp2 {
     width: 150px;
     height: 150px;
   }
-  div:nth-child(3) {
+  .circle-cmp3 {
     width: 70px;
     height: 70px;
   }
