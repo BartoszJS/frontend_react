@@ -42,7 +42,7 @@ const Header = () => {
         transition={{ duration: 0.5, delayChildren: 0.5 }}
         className='app__header-img'
       >
-        <img src={""} alt='profile_bg' />
+        <img src={images.profile} alt='profile_bg' />
       </motion.div>
       <motion.div
         variant={scaleVariants}
@@ -61,11 +61,16 @@ const Header = () => {
           <img src={images.html} alt='circle' />
         </div>
 
-        <div className='circle-cmp2 app__flex'>
-          <img src={images.flutter} alt='circle' />
+        <div className='circle-cmp2'>
+          <div className='nextjs'>
+            <img src={images.nextjs} alt='circle' />
+          </div>
         </div>
         <div className='circle-cmp3 app__flex'>
-          <img src={images.sass} alt='circle' />
+          <img src={images.node} alt='circle' />
+        </div>
+        <div className='circle-cmp4 app__flex'>
+          <img src={images.php} alt='circle' />
         </div>
       </motion.div>
     </div>

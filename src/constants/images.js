@@ -18,6 +18,8 @@ import sass from "../assets/sass.png";
 import typescript from "../assets/typescript.png";
 import vue from "../assets/vue.png";
 import tailwind from "../assets/tailwindcsslogo.png";
+import php from "../assets/php.png";
+import nextjs from "../assets/nextjs.png";
 
 import about01 from "../assets/about01.png";
 import about02 from "../assets/about02.png";
@@ -71,4 +73,6 @@ export default {
   skype,
   spotify,
   tailwind,
+  php,
+  nextjs,
 };
