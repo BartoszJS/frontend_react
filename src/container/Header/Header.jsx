@@ -17,8 +17,16 @@ const scaleVariants = {
 };
 const Header = () => {
   return (
-    <div className='app__header app__flex'>
-      <motion.div
+    <div className='app__header'>
+      <div className='photo'>
+        <div className='text'>
+          <div className='border-text'>
+            <div className='dot'></div>
+            BARTOSZ
+            <div className='dot'>{}</div>
+          </div>
+        </div>
+        {/* <motion.div
         whileInView={{ x: [-100, 0], opacity: [0, 1] }}
         transition={{ duration: 0.5 }}
         className='app__header-info'
@@ -36,14 +44,15 @@ const Header = () => {
             <p className='p-text'> Coś tam jeszcze</p>
           </div>
         </div>
-      </motion.div>
-      <motion.div
-        whileInView={{ opacity: [0, 1] }}
-        transition={{ duration: 0.5, delayChildren: 0.5 }}
-        className='app__header-img'
-      >
-        <img src={images.profile} alt='profile_bg' />
-      </motion.div>
+      </motion.div> */}
+        <motion.div
+          whileInView={{ opacity: [0, 1] }}
+          transition={{ duration: 0.5, delayChildren: 0.5 }}
+          className='app__header-img'
+        >
+          <img src={images.profile} alt='profile_bg' />
+        </motion.div>
+      </div>
       <motion.div
         variant={scaleVariants}
         whileInView={scaleVariants.whileInView}

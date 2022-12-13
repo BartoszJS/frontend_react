@@ -1,7 +1,7 @@
-import React from 'react';
-import { About, Footer, Header, Skills,  Work } from './container';
-import { Navbar,SocialMedia,NavigationDots } from './components';
-import './App.scss';
+import React from "react";
+import { About, Footer, Header, Skills, Work } from "./container";
+import { Navbar, SocialMedia, NavigationDots } from "./components";
+import "./App.scss";
 
 const App = () => {
   return (
