@@ -7,8 +7,8 @@ const App = () => {
   return (
     <div className='app'>
       <Navbar />
-      {/* <NavigationDots />
-      <SocialMedia /> */}
+      <NavigationDots />
+      <SocialMedia />
       <Header />
       <About />
       <Work />
