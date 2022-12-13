@@ -6,7 +6,7 @@
 
   background-repeat: no-repeat;
   background-position: center;
-  height: 1000px;
+  height: 900px;
   font-family: "Comic Neue", cursive;
 
   .app__wrapper {
@@ -25,13 +25,11 @@
 }
 
 .app__header {
-  width: 80%;
+  width: 90%;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 
-  @media screen and (min-width: 2000px) {
-    padding-top: 8rem;
-  }
   @media (max-width: 1200px) {
     grid-template-columns: 1fr;
     width: 80%;
@@ -510,10 +508,12 @@
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  height: 985px;
-  padding-bottom: 83px;
+
+  height: 875px;
+  padding-bottom: 60px;
   img {
     max-height: 100vh;
+    margin-left: 100px;
   }
 
   @media screen and (max-width: 1200px) {
