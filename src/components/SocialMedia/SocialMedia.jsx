@@ -1,7 +1,7 @@
-import React from 'react';
-import { BsGithub, BsFacebook } from 'react-icons/bs';
-import { FaFacebookF } from 'react-icons/fa';
-import './SocialMedia.scss'
+import React from "react";
+import { BsGithub, BsFacebook } from "react-icons/bs";
+import { FaFacebookF } from "react-icons/fa";
+import "./SocialMedia.scss";
 
 const SocialMedia = () => {
   return (
@@ -11,9 +11,6 @@ const SocialMedia = () => {
       </div>
       <div>
         <BsGithub />
-      </div>
-      <div>
-        <FaFacebookF />
       </div>
     </div>
   );

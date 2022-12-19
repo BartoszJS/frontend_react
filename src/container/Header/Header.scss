@@ -1,527 +1,113 @@
-@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&display=swap");
 
-#home {
-  position: relative;
-  background: url("../../assets/small-screen.jpg");
+.app__header {
+  background-color: rgb(30, 30, 40);
+  font-family: "Poppins", sans-serif;
 
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 900px;
-  font-family: "Comic Neue", cursive;
-
-  .app__wrapper {
-    padding: 0;
-
-    .copyright {
-      display: none;
-    }
+  .yellow {
+    color: rgb(255, 190, 0);
+  }
+  .white {
+    color: white;
   }
 
-  @media screen and (max-width: 1200px) {
-    background: url("../../assets/small-screen.jpg");
+  .app__header_content {
+    color: white;
+    padding-top: 3rem;
+    background: linear-gradient(
+        180deg,
+        rgba(30, 30, 40, 0.9) 0%,
+        rgba(30, 30, 40, 1) 90%
+      ),
+      url("../../assets/bg3.jpg");
+    background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
   }
-}
 
-.app__header {
-  width: 90%;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  .app__header_content-img {
+    height: 320px;
 
-  @media (max-width: 1200px) {
-    grid-template-columns: 1fr;
-    width: 80%;
-  }
-  @media (max-width: 1200px) {
-    grid-template-columns: 1fr;
-    width: 80%;
-  }
-  @media screen and (max-width: 992px) {
-    grid-template-columns: 1fr;
-    width: 100%;
-  }
-}
-
-.app__header-info {
-  flex: 0.65;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  height: 100%;
-
-  @media screen and (max-width: 2000px) {
-    width: 100%;
-    margin-right: 0rem;
-  }
-}
-
-.app__header-badge {
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  flex-direction: column;
-
-  .badge-cmp,
-  .tag-cmp {
-    padding: 1rem 2rem;
-    border: var(--white-color);
-    border-radius: 15px;
-    flex-direction: row;
-    width: auto;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  }
-
-  .tag-cmp {
-    flex-direction: column;
-    margin-top: 3rem;
-
-    p {
-      width: 100%;
-      text-transform: uppercase;
-      text-align: right;
-    }
-  }
-
-  span {
-    font-size: 2.5rem;
-  }
-
-  @media screen and (max-width: 1200px) {
-    justify-content: flex-start;
-    align-items: flex-start;
-  }
-}
-
-.app__header-circles {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: flex-start;
-  height: 100%;
-  margin-left: 10rem;
-  padding-top: 10rem;
-
-  div {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background: var(--white-color);
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-
-    img {
-      width: 80%;
-      height: 80%;
-    }
-  }
-  .circle-cmp0 {
-    width: 120px;
-    height: 120px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    background-color: white;
-    background-image: url("../../assets/css.png");
-    background-position: center;
-    background-size: 100px 100px;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    background: linear-gradient(
+        180deg,
+        rgba(100, 100, 100, 0.5) 0%,
+        rgba(30, 30, 40, 1) 90%
+      ),
+      url("../../assets/bg3.jpg");
     background-repeat: no-repeat;
-
-    .circle1 {
-      grid-area: 4 / 1 / 5 / 2;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 40px;
-      height: 40px;
-    }
-    .circle2 {
-      grid-area: 4 / 3 / 5 / 4;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-      width: 40px;
-      height: 40px;
-    }
-    img {
-      width: 35px;
-      height: 35px;
-    }
-  }
-
-  .circle-cmp1 {
-    margin-left: 200px;
-    margin-top: -100px;
-    width: 120px;
-    height: 120px;
-  }
-  .circle-cmp2 {
-    width: 170px;
-    height: 170px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    background-color: #1e1e1e;
-    background-image: url("../../assets/react.png");
     background-position: center;
-    background-size: 130px 118px;
-    background-repeat: no-repeat;
-    .nextjs {
-      grid-area: 4 / 1 / 5 / 2;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 50px;
-      height: 50px;
-    }
-  }
-  .circle-cmp3 {
-    width: 100px;
-    height: 100px;
-    margin-top: -80px;
-    margin-left: 220px;
-  }
-  .circle-cmp4 {
-    width: 100px;
-    height: 100px;
-  }
-
-  @media (max-width: 1200px) {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 2fr 2fr 3fr 2fr 2fr;
-    margin-left: 0;
-    padding-top: 0;
-    height: 17vh;
-
-    .circle-cmp0 {
-      margin-left: auto;
-      margin-right: auto;
-      width: 120px;
-      height: 120px;
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: repeat(4, 1fr);
-      grid-column-gap: 0px;
-      grid-row-gap: 0px;
-      background-color: white;
-      background-image: url("../../assets/css.png");
-      background-position: center;
-      background-size: 100px 100px;
-      background-repeat: no-repeat;
-
-      .circle1 {
-        grid-area: 4 / 1 / 5 / 2;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 40px;
-        height: 40px;
-      }
-      .circle2 {
-        grid-area: 4 / 3 / 5 / 4;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        width: 40px;
-        height: 40px;
-      }
-      img {
-        width: 35px;
-        height: 35px;
-      }
-    }
-
-    .circle-cmp1 {
-      margin-left: auto;
-      margin-right: auto;
-      margin-top: 0px;
-      width: 120px;
-      height: 120px;
-    }
-    .circle-cmp2 {
-      margin-left: auto;
-      margin-right: auto;
-      width: 130px;
-      height: 130px;
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      grid-template-rows: repeat(4, 1fr);
-      grid-column-gap: 0px;
-      grid-row-gap: 0px;
-      background-color: #1e1e1e;
-      background-image: url("../../assets/react.png");
-      background-position: center;
-      background-size: 110px 100px;
-      background-repeat: no-repeat;
-      .nextjs {
-        grid-area: 4 / 1 / 5 / 2;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 35px;
-        height: 35px;
-      }
-    }
-    .circle-cmp3 {
-      width: 120px;
-      height: 120px;
-      margin-top: 0px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    .circle-cmp4 {
-      margin-left: auto;
-      margin-right: auto;
-      width: 120px;
-      height: 120px;
-    }
-  }
-
-  @media screen and (max-width: 992px) {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 2fr 2fr 3fr 2fr 2fr;
-    margin-left: 0;
-    padding-top: 0;
-    height: 17vh;
-
-    .circle-cmp0 {
-      margin-left: auto;
-      margin-right: auto;
-      width: 70px;
-      height: 70px;
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: repeat(4, 1fr);
-      grid-column-gap: 0px;
-      grid-row-gap: 0px;
-      background-color: white;
-      background-image: url("../../assets/css.png");
-      background-position: center;
-      background-size: 60px 60px;
-      background-repeat: no-repeat;
-
-      .circle1 {
-        grid-area: 4 / 1 / 5 / 2;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 30px;
-        height: 30px;
-      }
-      .circle2 {
-        grid-area: 4 / 3 / 5 / 4;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        width: 30px;
-        height: 30px;
-      }
-      img {
-        width: 30px;
-        height: 30px;
-      }
-    }
-
-    .circle-cmp1 {
-      margin-left: auto;
-      margin-right: auto;
-      margin-top: 0px;
-      width: 70px;
-      height: 70px;
-    }
-    .circle-cmp2 {
-      margin-left: auto;
-      margin-right: auto;
-      width: 90px;
-      height: 90px;
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      grid-template-rows: repeat(4, 1fr);
-      grid-column-gap: 0px;
-      grid-row-gap: 0px;
-      background-color: #1e1e1e;
-      background-image: url("../../assets/react.png");
-      background-position: center;
-      background-size: 80px 75px;
-      background-repeat: no-repeat;
-      .nextjs {
-        grid-area: 4 / 1 / 5 / 2;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 30px;
-        height: 30px;
-      }
-    }
-    .circle-cmp3 {
-      width: 70px;
-      height: 70px;
-      margin-top: 0px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    .circle-cmp4 {
-      margin-left: auto;
-      margin-right: auto;
-      width: 70px;
-      height: 70px;
-    }
-  }
-  @media screen and (max-width: 400px) {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 2fr 2fr 3fr 2fr 2fr;
-    margin-left: 0;
-    padding-top: 0;
-    height: 17vh;
-
-    .circle-cmp0 {
-      margin-left: auto;
-      margin-right: auto;
-      width: 50px;
-      height: 50px;
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: repeat(4, 1fr);
-      grid-column-gap: 0px;
-      grid-row-gap: 0px;
-      background-color: white;
-      background-image: url("../../assets/css.png");
-      background-position: center;
-      background-size: 50px 50px;
-      background-repeat: no-repeat;
-
-      .circle1 {
-        grid-area: 4 / 1 / 5 / 2;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 20px;
-        height: 20px;
-      }
-      .circle2 {
-        grid-area: 4 / 3 / 5 / 4;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        width: 20px;
-        height: 20px;
-      }
-      img {
-        width: 20px;
-        height: 20px;
-      }
-    }
-
-    .circle-cmp1 {
-      margin-left: auto;
-      margin-right: auto;
-      margin-top: 0px;
-      width: 50px;
-      height: 50px;
-    }
-    .circle-cmp2 {
-      margin-left: auto;
-      margin-right: auto;
-      width: 70px;
-      height: 70px;
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      grid-template-rows: repeat(4, 1fr);
-      grid-column-gap: 0px;
-      grid-row-gap: 0px;
-      background-color: #1e1e1e;
-      background-image: url("../../assets/react.png");
-      background-position: center;
-      background-size: 60px 55px;
-      background-repeat: no-repeat;
-      .nextjs {
-        grid-area: 4 / 1 / 5 / 2;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 20px;
-        height: 20px;
-      }
-    }
-    .circle-cmp3 {
-      width: 50px;
-      height: 50px;
-      margin-top: 0px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    .circle-cmp4 {
-      margin-left: auto;
-      margin-right: auto;
-      width: 50px;
-      height: 50px;
-    }
-  }
-}
-
-.photo {
-  display: grid;
-  grid-template-rows: 2fr 4fr;
-  height: 100vh;
-}
-
-@media screen and (max-width: 1200px) {
-  .photo {
-    height: 83vh;
-  }
-}
-
-.text {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  margin-left: auto;
-  margin-right: auto;
-
-  .border-text {
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 40px;
-    background-color: rgba(256, 256, 256, 0.3);
-    padding: 1rem;
-    border-radius: 30px;
+    position: relative;
   }
-}
+  .app__header_content-img-photo {
+    .photo {
+      position: absolute;
+      height: 350px;
+      bottom: 0;
+      background-position: center;
+      background-size: cover;
+      z-index: 50;
+      right: 5%;
+    }
+  }
+  .app__header_content-img-text {
+    position: absolute;
+    z-index: 100;
+    left: 0;
+    padding-left: 5%;
 
-.app__header-img {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
+    .pflex {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
 
-  height: 875px;
-  padding-bottom: 60px;
-  img {
-    max-height: 100vh;
-    margin-left: 100px;
+    h1 {
+      font-size: 5rem;
+      font-weight: 700;
+    }
+    .yellow {
+      font-size: 3rem;
+      font-weight: 700;
+    }
+    .slash {
+      font-size: 2rem;
+    }
+    .white {
+      font-size: 4rem;
+    }
+
+    .button {
+      background-color: rgb(255, 190, 0);
+      padding: 1rem;
+      font-weight: 600;
+      border: none;
+    }
   }
 
-  @media screen and (max-width: 1200px) {
-    img {
-      width: 100%;
-      height: 70vh;
-      object-fit: contain;
-      z-index: 1;
+  .app__header-experience {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 1rem 2rem;
+    width: 90%;
+    margin: 0 auto;
+
+    .app__header-experience-single {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .white {
+        padding-left: 1rem;
+        font-size: 1rem;
+      }
     }
   }
 }

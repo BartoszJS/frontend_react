@@ -1,15 +1,26 @@
+.head-text2 {
+  color: #fff;
+  text-align: left;
+  width: 100%;
+  padding-left: 3%;
+  padding-top: 2rem;
+  font-weight: 600;
+}
+
 .app__skills {
   flex: 1;
   width: 100%;
   flex-direction: column;
+  height: 600px;
 }
 
 .app__skills-container {
-  width: 80%;
-  margin-top: 3rem;
-  display: flex;
-  flex-direction: row;
-
+  width: 100%;
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-left: auto;
+  margin-right: auto;
   @media screen and (max-width: 900px) {
     width: 100%;
     flex-direction: column;
@@ -17,36 +28,26 @@
 }
 
 .app__skills-list {
-  flex: 1;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: flex-start;
-  margin-right: 5rem;
-
-  @media screen and (max-width: 900px) {
-    margin-right: 0;
-    justify-content: center;
-    align-items: center;
-  }
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  width: 95%;
 }
 
 .app__skills-item {
   flex-direction: column;
-  text-align: center;
-
-  margin: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
   transition: all 0.3s ease-in-out;
 
   div {
-    width: 90px;
-    height: 90px;
-    border-radius: 50%;
-    background-color: #fff;
+    width: 120px;
+    height: 120px;
+    background-color: rgb(45, 45, 60);
 
     img {
-      width: 50%;
-      height: 50%;
+      width: 80%;
+      height: 80%;
     }
 
     &:hover {
@@ -58,6 +59,43 @@
     font-weight: 500;
     margin-top: 0.5rem;
   }
+  .react {
+    z-index: 100;
+    position: absolute;
+  }
+  .nextjs {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    z-index: 99;
+  }
+
+  .csshover {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    z-index: 99;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    .cssdiv {
+      width: 60px;
+      height: 60px;
+    }
+    img {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  // .nextjs {
+  //   display: none;
+  // }
+
+  // .react:hover + .nextjs {
+  //   transition: 0.2s;
+
+  //   display: block;
+  // }
 }
 
 .app__skills-exp {

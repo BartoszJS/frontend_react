@@ -1,6 +1,6 @@
 .app__social {
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
   align-items: flex-start;
   flex-direction: column;
   position: fixed;
@@ -8,14 +8,13 @@
   width: 50%;
   z-index: 3;
   padding: 1rem;
-
+  left: 0;
   div {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: var(--white-color);
+    background-color: rgb(10, 10, 20);
     margin: 0.25rem 0;
-    border: 1px solid var(--lightGray-color);
 
     display: flex;
     justify-content: center;
@@ -26,15 +25,14 @@
     svg {
       width: 15px;
       height: 15px;
-      color: var(--gray-color);
+      color: rgb(255, 190, 0);
     }
 
     &:hover {
-      background-color: var(--secondary-color);
-      border-color: var(--secondary-color);
+      background-color: rgb(255, 190, 0);
 
       svg {
-        color: var(--white-color);
+        color: black;
       }
     }
   }

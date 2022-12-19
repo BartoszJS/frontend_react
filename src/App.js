@@ -1,17 +1,22 @@
 import React from "react";
 import { About, Footer, Header, Skills, Work } from "./container";
-import { Navbar, SocialMedia, NavigationDots } from "./components";
+import { Navbar, Sidebar, SocialMedia, NavigationDots } from "./components";
 import "./App.scss";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const App = () => {
   return (
     <div className='app'>
-      <Navbar />
-      <NavigationDots />
-      <SocialMedia />
+      <Sidebar />
+      {/* <Navbar />*/}
+      {/* <NavigationDots />
+      <SocialMedia /> */}
       <Header />
-      <About />
+
+      <Skills />
       <Work />
+      <About />
+
       <Skills />
       <Footer />
     </div>
