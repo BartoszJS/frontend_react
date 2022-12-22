@@ -24,6 +24,7 @@ const Sidebar = () => {
           <div className='description'>Frontend Developer</div>
         </div>
       </div>
+      <div className='border1'></div>
       <div className='app__sidebar-data'>
         <div className='app__sidebar-data-info'>
           <div className='app__sidebar-data-info-left'>Wiek:</div>

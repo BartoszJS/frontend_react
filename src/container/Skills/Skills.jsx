@@ -5,176 +5,190 @@ import { urlFor, client } from "../../client";
 import "./Skills.scss";
 import { images } from "../../constants";
 import { MotionWrap, AppWrap } from "../../wrapper";
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/effect-coverflow";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+
+// import required modules
+import { EffectCoverflow, Pagination, Autoplay, Navigation } from "swiper";
 
 const Skills = () => {
   const [experience, setExperience] = useState([]);
-  const [skills, setSkills] = useState([]);
-  const [isShownReact, setIsShownReact] = useState(false);
-  const [isShownJS, setIsShownJS] = useState(false);
-  const [isShownHTML, setIsShownHTML] = useState(false);
-  const [isShownCSS, setIsShownCSS] = useState(false);
-  const [isShownPHP, setIsShownPHP] = useState(false);
-
-  useEffect(() => {
-    const query = '*[_type == "experiences"]';
-    const skillsQuery = '*[_type == "skills"]';
-
-    client.fetch(query).then((data) => {
-      setExperience(data);
-    });
-    client.fetch(skillsQuery).then((data) => {
-      setSkills(data);
-    });
-  }, []);
 
   return (
     <>
       <h2 className='head-text2'>Umiejętności</h2>
-      <div className='app__skills-container'>
-        <motion.div className='app__skills-list'>
+
+      <Swiper
+        effect={"coverflow"}
+        grabCursor={true}
+        centeredSlides={true}
+        slidesPerView={3}
+        coverflowEffect={{
+          rotate: 0,
+          stretch: 0,
+          depth: 300,
+          grabCursor: true,
+          centeredSlides: true,
+          modifier: 1,
+          slideShadows: false,
+        }}
+        pagination={true}
+        loop={true}
+        modules={[EffectCoverflow, Autoplay, Pagination, Navigation]}
+        className='mySwiper'
+      >
+        <SwiperSlide>
           <motion.div
-            whileInView={{ opacity: [0, 1] }}
-            transition={{ duration: 0.5 }}
-            className='app__skills-item'
+            whileInView={{ opacity: [1, 1] }}
+            transition={{ duration: 0 }}
+            className='app__skills-item-slider'
           >
             <p className='p-text'>React</p>
             <div
-              className='react app__flex'
-              style={{ backgroundColor: "rgb(45, 45, 60)" }}
-              onMouseEnter={() => setIsShownReact(true)}
-              onMouseLeave={() => setIsShownReact(false)}
+              className='react-slider app__flex'
+              style={{ backgroundColor: "rgba(45, 45, 60,0)" }}
             >
               <img src={images.react} alt='imag1e' />
             </div>
-            {isShownReact && (
-              <motion.div
-                initial={{ y: 0, opacity: 1 }}
-                animate={{ y: 120, opacity: 1 }}
-                transition={{ duration: 0.2 }}
-                className='nextjs app__flex'
-                style={{ backgroundColor: "rgb(45, 45, 60)" }}
-              >
-                <img src={images.nextjs} alt='imag1e' />
-              </motion.div>
-            )}
+            <motion.div
+              initial={{ y: 0, x: 0, opacity: 1 }}
+              animate={{ y: 55, x: -40, opacity: 1 }}
+              transition={{ duration: 0 }}
+              className='nextjs-slider app__flex'
+              style={{ backgroundColor: "rgba(45, 45, 60,0)" }}
+            >
+              <img
+                className='nextphoto-slider'
+                src={images.nextjs}
+                alt='imag1e'
+              />
+            </motion.div>
           </motion.div>
+        </SwiperSlide>
+        <SwiperSlide>
           <motion.div
-            whileInView={{ opacity: [0, 1] }}
-            transition={{ duration: 0.5 }}
-            className='app__skills-item'
+            whileInView={{ opacity: [1, 1] }}
+            transition={{ duration: 0 }}
+            className='app__skills-item-slider'
           >
             <p className='p-text'>JavaScript</p>
             <div
-              className='react app__flex'
-              style={{ backgroundColor: "rgb(45, 45, 60)" }}
-              onMouseEnter={() => setIsShownJS(true)}
-              onMouseLeave={() => setIsShownJS(false)}
+              className='js-slider app__flex'
+              style={{ backgroundColor: "rgba(45, 45, 60,0)" }}
             >
               <img src={images.js} alt='imag1e' />
             </div>
-            {isShownJS && (
-              <motion.div
-                initial={{ y: 0, opacity: 1 }}
-                animate={{ y: 120, opacity: 1 }}
-                transition={{ duration: 0.2 }}
-                className='nextjs app__flex'
-                style={{ backgroundColor: "rgb(45, 45, 60)" }}
-              >
-                <img src={images.nodejs} alt='imag1e' />
-              </motion.div>
-            )}
-          </motion.div>
-          <motion.div
-            whileInView={{ opacity: [0, 1] }}
-            transition={{ duration: 0.5 }}
-            className='app__skills-item'
-          >
-            <p className='p-text'>HTML</p>
-            <div
-              className='react app__flex'
-              style={{ backgroundColor: "rgb(45, 45, 60)" }}
-              onMouseEnter={() => setIsShownHTML(true)}
-              onMouseLeave={() => setIsShownHTML(false)}
+            <motion.div
+              initial={{ y: 0, x: 0, opacity: 1 }}
+              animate={{ y: 55, x: -25, opacity: 1 }}
+              transition={{ duration: 0 }}
+              className='nextjs-slider app__flex'
+              style={{ backgroundColor: "rgba(45, 45, 60,0)" }}
             >
-              <img src={images.html} alt='imag1e' />
-            </div>
-            {isShownHTML && (
-              <motion.div
-                initial={{ y: 0, opacity: 1 }}
-                animate={{ y: 120, opacity: 1 }}
-                transition={{ duration: 0.2 }}
-                className='nextjs app__flex'
-                style={{ backgroundColor: "rgb(45, 45, 60)" }}
-              >
-                <img src='' alt='imag1e' />
-              </motion.div>
-            )}
+              <img
+                className='jsphoto-slider'
+                src={images.nodejs}
+                alt='imag1e'
+              />
+              <img
+                className='reactphoto-slider'
+                src={images.react}
+                alt='imag1e'
+              />
+            </motion.div>
           </motion.div>
+        </SwiperSlide>
+
+        <SwiperSlide>
           <motion.div
-            whileInView={{ opacity: [0, 1] }}
-            transition={{ duration: 0.5 }}
-            className='app__skills-item'
-          >
-            <p className='p-text'>CSS</p>
-            <div
-              className='react app__flex'
-              style={{ backgroundColor: "rgb(45, 45, 60)" }}
-              onMouseEnter={() => setIsShownCSS(true)}
-              onMouseLeave={() => setIsShownCSS(false)}
-            >
-              <img src={images.css} alt='imag1e' />
-            </div>
-            {isShownCSS && (
-              <div className='csshover app__flex'>
-                <motion.div
-                  initial={{ y: 0, opacity: 1 }}
-                  animate={{ y: 90, opacity: 1 }}
-                  transition={{ duration: 0.2 }}
-                  className='cssdiv app__flex'
-                  style={{ backgroundColor: "rgb(45, 45, 60)" }}
-                >
-                  <img src={images.tailwind} alt='imag1e' />
-                </motion.div>
-                <motion.div
-                  initial={{ y: 0, opacity: 1 }}
-                  animate={{ y: 90, opacity: 1 }}
-                  transition={{ duration: 0.5 }}
-                  className='cssdiv app__flex'
-                  style={{ backgroundColor: "rgb(45, 45, 60)" }}
-                >
-                  <img src={images.sass} alt='imag1e' />
-                </motion.div>
-              </div>
-            )}
-          </motion.div>
-          <motion.div
-            whileInView={{ opacity: [0, 1] }}
-            transition={{ duration: 0.5 }}
-            className='app__skills-item'
+            whileInView={{ opacity: [1, 1] }}
+            transition={{ duration: 0 }}
+            className='app__skills-item-slider'
           >
             <p className='p-text'>PHP</p>
             <div
-              className='react app__flex'
-              style={{ backgroundColor: "rgb(45, 45, 60)" }}
-              onMouseEnter={() => setIsShownPHP(true)}
-              onMouseLeave={() => setIsShownPHP(false)}
+              className='react-slider app__flex'
+              style={{ backgroundColor: "rgba(45, 45, 60,0)" }}
             >
               <img src={images.php} alt='imag1e' />
             </div>
-            {isShownPHP && (
-              <motion.div
-                initial={{ y: 0, opacity: 1 }}
-                animate={{ y: 120, opacity: 1 }}
-                transition={{ duration: 0.2 }}
-                className='nextjs app__flex'
-                style={{ backgroundColor: "rgb(45, 45, 60)" }}
-              >
-                <img src={images.wordpress} alt='imag1e' />
-              </motion.div>
-            )}
+            <motion.div
+              initial={{ y: 0, x: 0, opacity: 1 }}
+              animate={{ y: 40, x: 40, opacity: 1 }}
+              transition={{ duration: 0 }}
+              className='nextjs-slider app__flex'
+              style={{ backgroundColor: "rgba(45, 45, 60,0)" }}
+            >
+              <img
+                className='wordpressphoto-slider'
+                src={images.wordpress}
+                alt='imag1e'
+              />
+            </motion.div>
           </motion.div>
-        </motion.div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <motion.div
+            whileInView={{ opacity: [1, 1] }}
+            transition={{ duration: 0 }}
+            className='app__skills-item-slider'
+          >
+            <p className='p-text'>HTML</p>
+            <div
+              className='html-slider app__flex'
+              style={{ backgroundColor: "rgba(45, 45, 60,0)" }}
+            >
+              <img src={images.html} alt='imag1e' />
+            </div>
+            <motion.div
+              initial={{ y: 0, x: 0, opacity: 1 }}
+              animate={{ y: 70, x: -40, opacity: 1 }}
+              transition={{ duration: 0 }}
+              className='nextjs-slider app__flex'
+              style={{ backgroundColor: "rgba(45, 45, 60,0)" }}
+            >
+              <img className='htmlphoto-slider' src={images.css} alt='imag1e' />
+            </motion.div>
+          </motion.div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <motion.div
+            whileInView={{ opacity: [1, 1] }}
+            transition={{ duration: 0 }}
+            className='app__skills-item-slider'
+          >
+            <p className='p-text'>CSS</p>
+            <div
+              className='react-slider app__flex'
+              style={{ backgroundColor: "rgba(45, 45, 60,0)" }}
+            >
+              <img src={images.css} alt='imag1e' />
+            </div>
+            <motion.div
+              initial={{ y: 0, x: 0, opacity: 1 }}
+              animate={{ y: 60, x: 0, opacity: 1 }}
+              transition={{ duration: 0 }}
+              className='nextjs-slider app__flex'
+              style={{ backgroundColor: "rgba(45, 45, 60,0)" }}
+            >
+              <img
+                className='cssphoto-slider'
+                src={images.tailwind}
+                alt='imag1e'
+              />
+              <img className='cssphoto-slider' src={images.sass} alt='imag1e' />
+            </motion.div>
+          </motion.div>
+        </SwiperSlide>
+      </Swiper>
 
+      <div className='app__skills-container'>
         <div className='app__skills-exp'>
           {experience.map((experience) => (
             <motion.div className='app__skills-exp-item' key={experience.year}>

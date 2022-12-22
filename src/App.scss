@@ -74,7 +74,7 @@ html {
 .p-text {
   font-size: 0.8rem;
   text-align: left;
-  color: rgb(182, 182, 182);
+  color: rgb(226, 226, 226);
   line-height: 1.5;
 
   @media screen and (min-width: 2000px) {
@@ -86,7 +86,21 @@ html {
   font-size: 1rem;
   font-weight: 800;
   color: white;
-  text-align: left;
+  text-align: center;
+
+  @media screen and (min-width: 2000px) {
+    font-size: 2rem;
+  }
+
+  @media screen and (max-width: 450px) {
+    font-size: 0.9rem;
+  }
+}
+.normal-text {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: rgb(201, 201, 201);
+  text-align: center;
 
   @media screen and (min-width: 2000px) {
     font-size: 2rem;

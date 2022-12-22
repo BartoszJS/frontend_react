@@ -1,6 +1,12 @@
 import React from "react";
 import { About, Footer, Header, Skills, Work } from "./container";
-import { Navbar, Sidebar, SocialMedia, NavigationDots } from "./components";
+import {
+  Navbar,
+  Sidebar,
+  SocialMedia,
+  NavigationDots,
+  Timeline,
+} from "./components";
 import "./App.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -9,16 +15,16 @@ const App = () => {
     <div className='app'>
       <Sidebar />
       {/* <Navbar />*/}
-      {/* <NavigationDots />
-      <SocialMedia /> */}
+      <NavigationDots />
+      <SocialMedia />
       <Header />
 
       <Skills />
       <Work />
       <About />
-
-      <Skills />
-      <Footer />
+      {/* <Timeline /> */}
+      {/* <Skills /> */}
+      {/* <Footer /> */}
     </div>
   );
 };

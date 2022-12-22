@@ -14,13 +14,10 @@ import react from "../assets/react.png";
 import redux from "../assets/redux.png";
 import typescript from "../assets/typescript.png";
 import vue from "../assets/vue.png";
-import bgfresh from "../assets/bgfresh.jpg";
-import bg1 from "../assets/bg1.jpg";
-import bg2 from "../assets/bg2.jpg";
-import bg3 from "../assets/bg3.jpg";
 import library from "../assets/library.png";
 import holcarczesci from "../assets/holcarczesci.png";
 import homely from "../assets/homely.png";
+import DALLE from "../assets/DALLE.png";
 
 import js from "../assets/js.png";
 import html from "../assets/html.png";
@@ -31,13 +28,10 @@ import php from "../assets/php.png";
 import sass from "../assets/sass.png";
 import tailwind from "../assets/tailwind.png";
 import wordpress from "../assets/wordpress.png";
-
-import about01 from "../assets/about01.png";
-import about02 from "../assets/about02.png";
-import about03 from "../assets/about03.png";
-import about04 from "../assets/about04.png";
+import znajdz from "../assets/znajdz.png";
 
 import profile from "../assets/profile.png";
+import profile2 from "../assets/profile2.jpg";
 import circle from "../assets/circle.svg";
 import logo from "../assets/logo.png";
 import profileclose from "../assets/profileclose.jpg";
@@ -69,11 +63,8 @@ export default {
   sass,
   typescript,
   vue,
-  about01,
-  about02,
-  about03,
-  about04,
   profile,
+  profile2,
   circle,
   logo,
   adidas,
@@ -89,10 +80,11 @@ export default {
   php,
   nextjs,
   profileclose,
-  bgfresh,
   html,
   nodejs,
   js,
   wordpress,
   homely,
+  DALLE,
+  znajdz,
 };
