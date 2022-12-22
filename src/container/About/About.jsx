@@ -19,8 +19,9 @@ const About = () => {
             <h3>Nazywam sie Bartosz Płaza</h3>
             <p>Jestem inżynierem informatyki</p>
             <p>
-              Przez cały tok studiów pobierałem stypendium naukowe za
-              wyróniające wyniki w nauce
+              Ukończyłem studia inynierskie na UTH w Radomiu o kieruneku
+              informatyka. Przez cały tok studiów pobierałem stypendium naukowe
+              za wyróniające wyniki w nauce
             </p>
             <div className='aboutme-text-table'>
               <div className='aboutme-text-table-left'>
@@ -47,4 +48,4 @@ const About = () => {
   );
 };
 
-export default MotionWrap(About, "app__about");
+export default About;
