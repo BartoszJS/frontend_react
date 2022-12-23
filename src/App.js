@@ -11,43 +11,38 @@ import {
 } from "./components";
 import "./App.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { motion } from "framer-motion";
 
 const App = () => {
   const [toggle, setToggle] = useState(true);
   return (
     <div className='app'>
-      {toggle ? (
-        <div className='smallpx'>
-          <div
-            onClick={() => setToggle(false)}
-            className='app__sidebar-small-toggle'
-          >
-            {">"}
-          </div>
+      <div className={`${toggle ? "smallpx" : "bigpx"}`}>
+        <motion.div
+          whileTap={{ scale: 0 }}
+          onClick={() => setToggle(!toggle)}
+          transition={{ duration: 0.5 }}
+          className={`${
+            toggle ? "app__sidebar-small-toggle" : "app__sidebar-big-toggle"
+          }`}
+        >
+          {toggle ? ">" : "<"}
+        </motion.div>
+        {toggle ? (
           <SidebarNarrow />
-          <NavigationDots />
-          <Header />
-          <Skills />
-          <Work />
-          <About />
-        </div>
-      ) : (
-        <div className='bigpx'>
-          <div
-            onClick={() => setToggle(true)}
-            className='app__sidebar-big-toggle'
-          >
-            {"<"}
+        ) : (
+          <div>
+            <SocialMedia />
+            <SidebarWidth />
           </div>
-          <SidebarWidth />
-          <NavigationDots />
-          <SocialMedia />
-          <Header />
-          <Skills />
-          <Work />
-          <About />
-        </div>
-      )}
+        )}
+
+        <NavigationDots />
+        <Header />
+        <Skills />
+        <Work />
+        <About />
+      </div>
 
       {/* <Navbar />*/}
       {/* <Timeline /> */}

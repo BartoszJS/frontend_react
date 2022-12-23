@@ -1,0 +1,187 @@
+.app__sidebar-narrow {
+  position: fixed;
+  width: 50px;
+  left: 0;
+  background-color: rgb(35, 35, 45);
+  height: 100vh;
+
+  .text-language {
+    color: rgb(200, 200, 200);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 0.8rem;
+  }
+
+  .app__sidebar-narrow-img {
+    padding-top: 7vh;
+    padding-bottom: 1vh;
+  }
+
+  .app__sidebar-narrow-img-img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  .border1 {
+    border-top: 1px solid rgb(200, 200, 200);
+    width: 40px;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+  }
+
+  .app__sidebar-narrow-languages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+
+    .app__sidebar-narrow-languages-polish {
+      display: grid;
+      grid-template-columns: 1fr;
+      text-align: center;
+      width: 50px;
+    }
+    .app__sidebar-narrow-languages-english {
+      display: grid;
+      grid-template-columns: 1fr;
+      text-align: center;
+      width: 50px;
+    }
+    .circle-wrap-narrow {
+      width: 50px;
+      height: 50px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      background: black;
+      border-radius: 50%;
+    }
+
+    .circle-wrap-narrow .circle-narrow .mask-narrow,
+    .circle-wrap-narrow .circle-narrow .fill-narrow {
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      border-radius: 50%;
+    }
+
+    .circle-wrap-narrow .circle-narrow .mask-narrow {
+      clip: rect(0px, 50px, 50px, 25px);
+    }
+
+    .circle-wrap-narrow .inside-circle-narrow {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: rgb(38, 38, 50);
+      line-height: 45px;
+      text-align: center;
+      margin-top: 3px;
+      margin-left: 3px;
+      color: grey;
+      position: absolute;
+      z-index: 100;
+      font-weight: 700;
+      font-size: 0.8em;
+    }
+
+    /* color animation */
+
+    /* 3rd progress bar */
+    .mask-narrow .fill-narrow {
+      clip: rect(0px, 25px, 50px, 0px);
+      background-color: rgb(255, 190, 0);
+    }
+
+    .mask-narrow.full-narrow,
+    .circle-narrow .fill-narrow {
+      animation: fill ease-in-out 2s;
+      transform: rotate(180deg);
+    }
+
+    @keyframes fill-narrow {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(180deg);
+      }
+    }
+    .circle-wrap1-narrow {
+      width: 50px;
+      height: 50px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      background: black;
+      border-radius: 50%;
+    }
+
+    .circle-wrap1-narrow .circle1-narrow .mask1-narrow,
+    .circle-wrap1-narrow .circle1-narrow .fill1-narrow {
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      border-radius: 50%;
+    }
+
+    .circle-wrap1-narrow .circle1-narrow .mask1-narrow {
+      clip: rect(0px, 50px, 50px, 25px);
+    }
+
+    .circle-wrap1-narrow .inside-circle1-narrow {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: rgb(38, 38, 50);
+      line-height: 45px;
+      text-align: center;
+      margin-top: 3px;
+      margin-left: 3px;
+      color: grey;
+      position: absolute;
+      z-index: 100;
+      font-weight: 700;
+      font-size: 0.8em;
+    }
+
+    /* color animation */
+
+    /* 3rd progress bar */
+    .mask1-narrow .fill1-narrow {
+      clip: rect(0px, 25px, 50px, 0px);
+      background-color: rgb(255, 190, 0);
+    }
+
+    .mask1-narrow.full1-narrow,
+    .circle1-narrow .fill1-narrow {
+      animation: fill1-narrow ease-in-out 2s;
+      transform: rotate(162deg);
+    }
+
+    @keyframes fill1-narrow {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(162deg);
+      }
+    }
+  }
+  .app__sidebar-narrow-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: rgb(200, 200, 200);
+    font-size: 2.2em;
+    padding-bottom: 1vh;
+  }
+}

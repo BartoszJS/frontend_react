@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./SidebarWidth.scss";
 import { images } from "../../constants";
-
+import { motion } from "framer-motion";
 import CountUp from "react-countup";
 
 const SidebarWidth = () => {
@@ -10,7 +10,12 @@ const SidebarWidth = () => {
 
   const [toggle, setToggle] = useState(false);
   return (
-    <nav className='app__sidebar'>
+    <motion.div
+      initial={{ x: -300, opacity: 0 }}
+      animate={{ x: 0, opacity: 1 }}
+      transition={{ duration: 0.5 }}
+      className='app__sidebar'
+    >
       <div className='app__sidebar-me'>
         <div className='grid1fr'>
           <div className='app__sidebar-me-photoanddiv'>
@@ -110,7 +115,7 @@ const SidebarWidth = () => {
           <div className='Loading'></div>
         </div>
       </div>
-    </nav>
+    </motion.div>
   );
 };
 
