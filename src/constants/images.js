@@ -18,6 +18,9 @@ import library from "../assets/library.png";
 import holcarczesci from "../assets/holcarczesci.png";
 import homely from "../assets/homely.png";
 import DALLE from "../assets/DALLE.png";
+import DALLEnocup from "../assets/DALLEnocup.png";
+import DALLEnocupflip from "../assets/DALLEnocupflip.png";
+import DALLESHORT from "../assets/DALLESHORT.png";
 
 import js from "../assets/js.png";
 import html from "../assets/html.png";
@@ -29,6 +32,10 @@ import sass from "../assets/sass.png";
 import tailwind from "../assets/tailwind.png";
 import wordpress from "../assets/wordpress.png";
 import znajdz from "../assets/znajdz.png";
+import bartosz from "../assets/bartosz.png";
+import me1 from "../assets/me1.png";
+import me2 from "../assets/me2.jpg";
+import close1 from "../assets/close1.jpg";
 
 import profile from "../assets/profile.png";
 import profile2 from "../assets/profile2.jpg";
@@ -86,5 +93,12 @@ export default {
   wordpress,
   homely,
   DALLE,
+  DALLEnocup,
+  DALLEnocupflip,
+  DALLESHORT,
   znajdz,
+  bartosz,
+  me1,
+  me2,
+  close1,
 };

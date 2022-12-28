@@ -21,14 +21,22 @@ const Skills = () => {
   const [experience, setExperience] = useState([]);
 
   return (
-    <>
+    <div className='skills_cont'>
       <h2 className='head-text2'>Umiejętności</h2>
 
       <Swiper
         effect={"coverflow"}
         grabCursor={true}
+        navigation={true}
         centeredSlides={true}
-        slidesPerView={3}
+        breakpoints={{
+          768: {
+            slidesPerView: 3,
+          },
+          300: {
+            slidesPerView: 1,
+          },
+        }}
         coverflowEffect={{
           rotate: 0,
           stretch: 0,
@@ -224,7 +232,7 @@ const Skills = () => {
           ))}
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

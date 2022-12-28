@@ -36,10 +36,10 @@ const Header = () => {
             <button className='button'>MOJE PROJEKTY</button>
           </div>
           <div className='app__header_content-img-photo'>
-            <img className='photo' src={images.profile} alt='profile' />
+            <img className='photo' src={images.me1} alt='profile' />
           </div>
         </div>
-        <div className='app__header-experience'>
+        {/* <div className='app__header-experience'>
           <div className='app__header-experience-single'>
             <span className='yellow'>10 </span>
             <span className='white'> Certyfikatów</span>
@@ -52,7 +52,7 @@ const Header = () => {
             <span className='yellow'>10 </span>
             <span className='white'>Projektów</span>
           </div>
-        </div>
+        </div> */}
       </div>
     </motion.div>
   );

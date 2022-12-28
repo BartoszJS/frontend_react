@@ -21,7 +21,7 @@ const SidebarNarrow = () => {
     >
       <div className='app__sidebar-narrow-img'>
         <img
-          src={images.profileclose}
+          src={images.bartosz}
           className='app__sidebar-narrow-img-img'
           alt='profile'
         ></img>

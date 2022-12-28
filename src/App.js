@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { About, Footer, Header, Skills, Work } from "./container";
+import { About, Footer, Header, Skills, Work, Works } from "./container";
 import {
   Navbar,
   Sidebar,
@@ -40,10 +40,11 @@ const App = () => {
         <NavigationDots />
         <Header />
         <Skills />
-        <Work />
+
+        <Works />
         <About />
       </div>
-
+      {/* <Work /> */}
       {/* <Navbar />*/}
       {/* <Timeline /> */}
       {/* <Skills /> */}

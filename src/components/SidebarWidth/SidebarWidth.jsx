@@ -21,7 +21,7 @@ const SidebarWidth = () => {
           <div className='app__sidebar-me-photoanddiv'>
             <img
               className='app__sidebar-me-photo'
-              src={images.profileclose}
+              src={images.bartosz}
               alt='profile'
             ></img>
           </div>

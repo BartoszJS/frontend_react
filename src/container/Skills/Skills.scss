@@ -19,6 +19,18 @@ body {
   margin: 0;
   padding: 0;
 }
+.skills_cont {
+  height: 45vh;
+  background: linear-gradient(
+      180deg,
+      rgba(30, 30, 40, 0.95) 0%,
+      rgba(30, 30, 40, 0.95) 100%
+    ),
+    url("../../assets/DALLEnocupflip.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
 
 .swiper {
   width: 95%;
@@ -130,7 +142,6 @@ body {
   flex: 1;
   width: 100%;
   flex-direction: column;
-  height: 400px;
 }
 
 .app__skills-container {

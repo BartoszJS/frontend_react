@@ -10,7 +10,7 @@
 .aboutme {
   margin-top: 3rem;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 2fr;
 }
 .aboutme1 {
   display: flex;
@@ -18,40 +18,17 @@
   align-items: center;
 
   .aboutme-img {
-    background: linear-gradient(
-        180deg,
-        rgba(30, 30, 40, 0.4) 0%,
-        rgba(30, 30, 40, 1) 95%
-      ),
-      url("../../assets/profile2.jpg");
-    background-position: center;
-    background-size: cover;
-    width: 50%;
+    border: 1px solid red;
+    width: 100%;
 
     display: flex;
     justify-content: center;
     align-items: center;
-
-    img {
-      padding: 2rem;
-      width: 90%;
-      height: 100%;
-      object-fit: contain;
-      z-index: 10;
-    }
-  }
-}
-
-.aboutme2 {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  .aboutme-text {
-    color: white;
   }
   .aboutme-text-table {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    color: white;
     .aboutme-text-table-left {
       display: grid;
       grid-template-columns: 1fr 2fr;
@@ -70,5 +47,14 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
     }
+  }
+}
+
+.aboutme2 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  .aboutme-text {
+    color: white;
   }
 }

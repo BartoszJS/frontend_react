@@ -7,15 +7,36 @@ html {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: rgb(255, 190, 0);
+  color: rgb(255, 190, 0);
   display: flex;
   justify-content: center;
   align-items: center;
   margin-left: -20px;
   margin-top: 20px;
-  font-size: 30px;
+  font-size: 40px;
   z-index: 10000;
   cursor: pointer;
+  padding: 20px;
+}
+
+.swiper-button-next {
+  visibility: hidden;
+  color: white;
+  padding-bottom: 80px;
+}
+.swiper-button-prev {
+  visibility: hidden;
+  color: white;
+  padding-bottom: 80px;
+}
+
+@media screen and (max-width: 768px) {
+  .swiper-button-next {
+    visibility: visible;
+  }
+  .swiper-button-prev {
+    visibility: visible;
+  }
 }
 
 .app__sidebar-big-toggle {
@@ -23,15 +44,16 @@ html {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: rgb(255, 190, 0);
   display: flex;
+  color: rgb(255, 190, 0);
   justify-content: center;
   align-items: center;
-  margin-left: 230px;
+  margin-left: -20px;
   z-index: 10000;
   margin-top: 20px;
-  font-size: 30px;
+  font-size: 40px;
   cursor: pointer;
+  padding: 20px;
 }
 
 .app {
@@ -151,5 +173,9 @@ html {
 @media screen and (max-width: 992px) {
   .bigpx {
     margin-left: 50px;
+  }
+
+  .app__sidebar-big-toggle {
+    margin-left: 230px;
   }
 }

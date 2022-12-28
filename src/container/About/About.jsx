@@ -11,18 +11,6 @@ const About = () => {
       <div className='aboutme'>
         <div className='aboutme1'>
           <div className='aboutme-img'>
-            <img src={images.profile2} alt='aboutmePhoto' />
-          </div>
-        </div>
-        <div className='aboutme2'>
-          <div className='aboutme-text'>
-            <h3>Nazywam sie Bartosz Płaza</h3>
-            <p>Jestem inżynierem informatyki</p>
-            <p>
-              Ukończyłem studia inynierskie na UTH w Radomiu o kieruneku
-              informatyka. Przez cały tok studiów pobierałem stypendium naukowe
-              za wyróniające wyniki w nauce
-            </p>
             <div className='aboutme-text-table'>
               <div className='aboutme-text-table-left'>
                 <div className='aboutme-text-table-left-bold'>Wiek</div>
@@ -41,6 +29,24 @@ const About = () => {
                 <div className='aboutme-text-table-left-normal'>22</div>
               </div>
             </div>
+          </div>
+        </div>
+        <div className='aboutme2'>
+          <div className='aboutme-text'>
+            <h3>Nazywam sie Bartosz Płaza</h3>
+            <p></p>
+            <p>
+              Jestem inżynierem informatyki. Skończyłem studia na UTH w Radomiu.
+              Przez cały tok studiów pobierałem stypendium naukowe za
+              wyróniające wyniki w nauce
+            </p>
+
+            <p>
+              Jestem pracowitym i chłonnym człowiekiem. Ucząc się wykonałem
+              kilka kursów na Udemy, kurs Frontend Developera od strefy kursów i
+              przeczytałem kilka książek o programowaniu stron internetowych.
+            </p>
+            <p>Gwarantuje 100% zaangażowania </p>
           </div>
         </div>
       </div>

@@ -683,3 +683,149 @@ export default MotionWrap(Skills, "app__skills");
 
 
 
+
+
+.app__works_container {
+  background-color: rgb(40, 40, 50);
+  padding: 1rem;
+}
+
+.app__singlework-left {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-left: 10%;
+  margin-right: 10%;
+  .app__singlework-img {
+    border: 1px solid white;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    .app__singlework-img-dots {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin-left: 1rem;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      .app__singlework-img-dots-red {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: red;
+      }
+      .app__singlework-img-dots-yellow {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: yellow;
+        margin: 0.3rem;
+      }
+      .app__singlework-img-dots-green {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: green;
+      }
+    }
+    .app__singlework-img-img {
+      width: 100%;
+      border-radius: 0px 0px 1rem 1rem;
+    }
+  }
+  .app__singlework-text {
+    color: white;
+    text-align: right;
+    .app__singlework-text-title {
+      margin-bottom: 20px;
+    }
+
+    .app__singlework-text-desc {
+      text-align: left;
+      margin-left: -50%;
+      margin-top: 30%;
+      margin-right: 50%;
+      background-color: rgb(45, 45, 60);
+      border-radius: 10px;
+      border: 1px solid grey;
+      font-size: 16px;
+      padding: 1rem 1rem 0 1rem;
+    }
+  }
+}
+
+.app__singlework-right {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 50px;
+  .app__singlework-img {
+    border: 1px solid white;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+
+    z-index: 10;
+    .app__singlework-img-dots {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin-left: 1rem;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      .app__singlework-img-dots-red {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: red;
+      }
+      .app__singlework-img-dots-yellow {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: yellow;
+        margin: 0.3rem;
+      }
+      .app__singlework-img-dots-green {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: green;
+      }
+    }
+    .app__singlework-img-img {
+      width: 100%;
+      border-radius: 0px 0px 1rem 1rem;
+    }
+  }
+  .app__singlework-text {
+    color: white;
+    text-align: left;
+    z-index: 100;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .app__singlework-text-title {
+      margin-bottom: 20px;
+    }
+
+    .app__singlework-text-desc {
+      text-align: left;
+      margin-left: 50%;
+      margin-top: 40%;
+      margin-right: -50%;
+      background-color: rgb(45, 45, 60);
+      border-radius: 10px;
+      border: 1px solid grey;
+      font-size: 16px;
+      padding: 1rem 1rem 0 1rem;
+    }
+  }
+}
+
+
+
+
