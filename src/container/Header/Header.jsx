@@ -30,7 +30,6 @@ const Header = () => {
             <p className='pflex'>
               <span className='white'>{"<"}</span>
               <span className='yellow'>Portfolio</span>
-              <span className='slash'>{"/"}</span>
               <span className='white'>{">"}</span>
             </p>
             <button className='button'>MOJE PROJEKTY</button>
@@ -39,20 +38,6 @@ const Header = () => {
             <img className='photo' src={images.me1} alt='profile' />
           </div>
         </div>
-        {/* <div className='app__header-experience'>
-          <div className='app__header-experience-single'>
-            <span className='yellow'>10 </span>
-            <span className='white'> Certyfikatów</span>
-          </div>
-          <div className='app__header-experience-single'>
-            <span className='yellow'>17 </span>
-            <span className='white'>Kurs</span>
-          </div>
-          <div className='app__header-experience-single'>
-            <span className='yellow'>10 </span>
-            <span className='white'>Projektów</span>
-          </div>
-        </div> */}
       </div>
     </motion.div>
   );

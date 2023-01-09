@@ -8,6 +8,7 @@
   flex-direction: column;
   justify-content: space-between;
   color: white;
+  z-index: 1002;
 }
 .app__sidebar-toggle {
   position: absolute;
@@ -153,7 +154,7 @@
     margin-left: 5px;
     color: grey;
     position: absolute;
-    z-index: 100;
+    z-index: 1001;
     font-weight: 700;
     font-size: 1.2em;
   }
@@ -214,7 +215,7 @@
     margin-left: 5px;
     color: grey;
     position: absolute;
-    z-index: 100;
+    z-index: 1001;
     font-weight: 700;
     font-size: 1.2em;
   }
