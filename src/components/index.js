@@ -5,3 +5,6 @@ export { default as SidebarWidth } from "./SidebarWidth/SidebarWidth";
 export { default as NavigationDots } from "./NavigationDots/NavigationDots";
 export { default as SocialMedia } from "./SocialMedia/SocialMedia";
 export { default as Timeline } from "./Timeline/Timeline";
+export { default as Spinneryellow } from "./Spinneryellow/Spinneryellow";
+export { default as Dotsloading } from "./Dotsloading/Dotsloading";
+export { default as Language } from "./Language/Language";

@@ -26,8 +26,8 @@ const Header = () => {
       <div className='app__header_content'>
         <div className='app__header_content-img'>
           <div className='app__header_content-img-text'>
-            <h1>Bartosz Płaza</h1>
-            <p className='pflex'>
+            <h1 className='sas1234'>Bartosz Płaza</h1>
+            <p className='textaligincenter'>
               <span className='white'>{"<"}</span>
               <span className='yellow'>Portfolio</span>
               <span className='white'>{">"}</span>

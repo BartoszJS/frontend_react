@@ -1,5 +1,13 @@
 import React, { useState } from "react";
-import { About, Footer, Header, Skills, Work, Works } from "./container";
+import {
+  About,
+  Contact,
+  Footer,
+  Header,
+  Skills,
+  Work,
+  Works,
+} from "./container";
 import {
   Navbar,
   Sidebar,
@@ -8,10 +16,12 @@ import {
   Timeline,
   SidebarWidth,
   SidebarNarrow,
+  Language,
 } from "./components";
 import "./App.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { motion } from "framer-motion";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 const App = () => {
   const [toggle, setToggle] = useState(true);
@@ -36,19 +46,21 @@ const App = () => {
             <SidebarWidth />
           </div>
         )}
-
+        <Language />
         <NavigationDots />
         <Header />
         <Skills />
-
         <Works />
+        <Work />
         <About />
+        <Contact />
+        <Timeline />
       </div>
-      {/* <Work /> */}
-      {/* <Navbar />*/}
-      {/* <Timeline /> */}
-      {/* <Skills /> */}
-      {/* <Footer /> */}
+      {/* <Work />
+      <Navbar />
+      
+      <Skills />
+      <Footer /> */}
     </div>
   );
 };

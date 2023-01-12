@@ -9,7 +9,7 @@ const About = () => {
     <>
       <h2 className='head-text3'>O mnie</h2>
       <div className='aboutme'>
-        <div className='aboutme1'>
+        {/* <div className='aboutme1'>
           <div className='aboutme-img'>
             <div className='aboutme-text-table'>
               <div className='aboutme-text-table-left'>
@@ -30,7 +30,7 @@ const About = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
         <div className='aboutme2'>
           <div className='aboutme-text'>
             <h3>Nazywam sie Bartosz Płaza</h3>

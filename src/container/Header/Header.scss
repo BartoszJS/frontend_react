@@ -1,199 +1,187 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&display=swap");
-
 .app__header {
   background-color: rgb(30, 30, 40);
   font-family: "Poppins", sans-serif;
+}
+.app__header_content {
+  color: white;
+  background: linear-gradient(
+      180deg,
+      rgba(30, 30, 40, 0.6) 0%,
+      rgba(30, 30, 40, 1) 80%
+    ),
+    url("../../assets/DALLEnocup.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   height: 55vh;
+  padding-top: 3vh;
+}
+
+.app__header_content-img {
+  margin-left: 2rem;
+  height: 52vh;
+  margin-right: 2rem;
+  background: linear-gradient(
+      180deg,
+      rgba(30, 30, 40, 0.3) 0%,
+      rgba(30, 30, 40, 0.3) 30%,
+      rgba(30, 30, 40, 0.9) 100%
+    ),
+    url("../../assets/DALLEnocup.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.app__header_content-img-text {
+  z-index: 500;
+
+  h1 {
+    font-size: 4rem;
+    font-weight: 600;
+  }
+  .textaligincenter {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
   .yellow {
+    font-size: 3rem;
+    font-weight: 600;
     color: rgb(255, 190, 0);
   }
+  .slash {
+    font-size: 2rem;
+  }
   .white {
-    color: white;
+    font-size: 4rem;
   }
 
-  .app__header_content {
-    color: white;
-    padding-top: 5vh;
-    background: linear-gradient(
-        180deg,
-        rgba(30, 30, 40, 0.6) 0%,
-        rgba(30, 30, 40, 1) 80%
-      ),
-      url("../../assets/DALLEnocup.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-  }
-
-  .app__header_content-img {
-    height: 320px;
-
-    margin-left: 2rem;
-    margin-right: 2rem;
-    background: linear-gradient(
-        180deg,
-        rgba(30, 30, 40, 0.3) 0%,
-        rgba(30, 30, 40, 0.3) 30%,
-        rgba(30, 30, 40, 0.9) 100%
-      ),
-      url("../../assets/DALLEnocup.png");
-    background-repeat: no-repeat;
-    background-position: left;
-    background-size: cover;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
+  .button {
+    background-color: rgb(255, 190, 0);
+    padding: 1rem;
+    font-weight: 600;
+    border: none;
+    width: fit-content;
   }
 
   @media screen and(max-width:992px) {
-    .app__header_content {
-      height: 100vh;
-      background: linear-gradient(
-          180deg,
-          rgba(30, 30, 40, 0.7) 0%,
-          rgba(30, 30, 40, 1) 95%
-        ),
-        url("../../assets/DALLESHORT.png");
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
-    }
-
-    .app__header_content-img {
-      margin-left: 2rem;
-      margin-right: 2rem;
-      height: 95vh;
-      background: linear-gradient(
-          180deg,
-          rgba(0, 0, 0, 0.4) 0%,
-          rgba(30, 30, 40, 0.4) 60%,
-          rgba(30, 30, 40, 0.8) 65%,
-          rgba(30, 30, 40, 0.8) 90%
-        ),
-        url("../../assets/DALLESHORT.png");
-      object-fit: cover;
-      background-position: center;
-      background-size: cover;
-    }
-  }
-
-  @media screen and(max-width:576px) {
-    .app__header_content-img {
-      margin-left: 0rem;
-      margin-right: 0rem;
-    }
-  }
-
-  .app__header_content-img-photo {
-    .photo {
-      position: absolute;
-      height: 350px;
-      bottom: 0;
-      background-position: center;
-      background-size: cover;
-      z-index: 50;
-      right: 0;
-    }
-    @media screen and (max-width: 992px) {
-      .photo {
-        height: 60vh;
-        width: 100%;
-        object-fit: contain;
-        z-index: 100;
-        bottom: 0;
-      }
-    }
-  }
-  .app__header_content-img-text {
-    position: absolute;
-    z-index: 500;
-    left: 0;
-    top: 0;
-    padding-top: 15px;
-    padding-left: 2.5%;
-
-    .pflex {
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
-    }
-
     h1 {
-      font-size: 5rem;
-      font-weight: 700;
+      font-size: 3rem;
     }
     .yellow {
-      font-size: 3rem;
-      font-weight: 700;
+      font-size: 2rem;
     }
     .slash {
       font-size: 2rem;
     }
     .white {
-      font-size: 4rem;
+      font-size: 2rem;
     }
-
     .button {
-      background-color: rgb(255, 190, 0);
-      padding: 1rem;
-      font-weight: 600;
-      border: none;
-    }
-
-    @media screen and(max-width:992px) {
-      h1 {
-        font-size: 4rem;
-        font-weight: 700;
-      }
-      .yellow {
-        font-size: 3rem;
-        font-weight: 700;
-      }
-      .slash {
-        font-size: 2rem;
-      }
-      .white {
-        font-size: 3rem;
-      }
-      .pflex {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-      }
+      padding: 0.7rem;
     }
   }
-
-  .app__header-experience {
-    display: flex;
-    justify-content: space-between;
-
-    align-items: center;
-    font-size: 1.5rem;
-    font-weight: 600;
-    padding: 1rem 2rem;
-    width: 90%;
-    margin: 0 auto;
-
-    .app__header-experience-single {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      .white {
-        padding-left: 1rem;
-        font-size: 1rem;
-      }
+  @media screen and(max-width:420px) {
+    h1 {
+      font-size: 2.3rem;
     }
-  }
-  @media screen and (max-width: 768px) {
-    .app__header-experience {
-      flex-direction: column;
+    .yellow {
+      font-size: 1.5rem;
+    }
+    .slash {
+      font-size: 1.5rem;
+    }
+    .white {
+      font-size: 1.5rem;
+    }
+    .button {
+      font-size: 1rem;
+      padding: 0.4rem;
     }
   }
 }
-@media screen and (max-width: 992px) {
-  .app__header {
+.app__header_content-img-photo {
+  display: grid;
+  justify-content: center;
+  align-items: flex-end;
+  .photo {
+    height: 50vh;
+    background-position: center;
+    background-size: cover;
+    z-index: 50;
+  }
+}
+
+@media screen and(max-width:992px) {
+  .app__header_content {
     height: 100vh;
+  }
+  .app__header_content-img {
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.4) 0%,
+        rgba(30, 30, 40, 0.4) 60%,
+        rgba(30, 30, 40, 0.8) 65%,
+        rgba(30, 30, 40, 0.8) 90%
+      ),
+      url("../../assets/DALLESHORT.png");
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+    grid-template-columns: 1fr;
+    height: 100vh;
+  }
+  .app__header_content-img-photo {
+    justify-content: flex-end;
+    align-items: flex-end;
+    .photo {
+      height: 60vh;
+    }
+  }
+  .app__header_content-img-text {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .textaligincenter {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+@media screen and(max-width:500px) {
+  .app__header_content {
+    padding-top: 0vh;
+  }
+  .app__header_content-img {
+    margin-left: 0rem;
+    margin-right: 0rem;
+  }
+  .app__header_content-img-photo {
+    .photo {
+      height: 60vh;
+      max-width: 300px;
+      object-fit: contain;
+    }
+  }
+}
+@media screen and(max-width:350px) {
+  .app__header_content-img {
+    margin-left: 0rem;
+    margin-right: 0rem;
+  }
+  .app__header_content-img-photo {
+    .photo {
+      height: 50vh;
+      max-width: 250px;
+      object-fit: contain;
+    }
   }
 }

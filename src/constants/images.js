@@ -21,6 +21,13 @@ import DALLE from "../assets/DALLE.png";
 import DALLEnocup from "../assets/DALLEnocup.png";
 import DALLEnocupflip from "../assets/DALLEnocupflip.png";
 import DALLESHORT from "../assets/DALLESHORT.png";
+import strefa from "../assets/strefa.png";
+import mern from "../assets/mern.png";
+import reactfirebase from "../assets/reactfirebase.png";
+import dotsblack from "../assets/dotsblack.svg";
+import spinneryellow from "../assets/spinneryellow.svg";
+import pl from "../assets/pl.png";
+import eng from "../assets/en.png";
 
 import js from "../assets/js.png";
 import html from "../assets/html.png";
@@ -101,4 +108,11 @@ export default {
   me1,
   me2,
   close1,
+  strefa,
+  mern,
+  reactfirebase,
+  spinneryellow,
+  dotsblack,
+  pl,
+  eng,
 };
