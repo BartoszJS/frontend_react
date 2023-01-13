@@ -5,11 +5,7 @@ import {
 } from "react-vertical-timeline-component";
 import { AiFillEye, AiFillGithub } from "react-icons/ai";
 import { SiJavascript, SiReact } from "react-icons/si";
-import { FaReact } from "react-icons/fa";
-import { IoLogoJavascript } from "react-icons/";
-
-import "./Timeline.scss";
-import { images } from "../../constants";
+import { images } from "../../../../constants";
 import { Spinneryellow, Dotsloading } from "../../components";
 
 const Timeline = () => {
@@ -31,7 +27,7 @@ const Timeline = () => {
             background: "#2d2d3c",
             color: "#fff",
           }}
-          contentArrowStyle={{ borderRight: "5px solid white" }}
+          contentArrowStyle={{ borderRight: "7px solid  white" }}
           iconStyle={{ background: "white", color: "#000" }}
           icon={<SiJavascript />}
         >
@@ -64,7 +60,7 @@ const Timeline = () => {
             color: "#fff",
           }}
           iconStyle={{ background: "white", color: "#000" }}
-          icon={<SiReact />}
+          icon={<AiFillEye />}
         >
           <div className='vertical-timeline-element--work-flex'>
             <div>
@@ -92,13 +88,7 @@ const Timeline = () => {
             background: "#2d2d3c",
             color: "#fff",
           }}
-          iconStyle={{
-            background: "white",
-            color: "#000",
-            width: "40px",
-            height: "40px ",
-            fontSize: "40px",
-          }}
+          iconStyle={{ background: "white", color: "#000" }}
           icon={<SiReact />}
         >
           <div className='vertical-timeline-element--work-flex'>

@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./SidebarWidth.scss";
-import { images } from "../../constants";
+import { images } from "../../../../constants";
 import { motion } from "framer-motion";
 import CountUp from "react-countup";
 
@@ -48,7 +47,7 @@ const SidebarWidth = () => {
               </div>
             </div>
           </div>
-          <div>Polski</div>
+          <div>Polish</div>
         </div>
         <div className='app__sidebar-languages-english'>
           <div className='circle-wrap1'>
@@ -66,7 +65,7 @@ const SidebarWidth = () => {
               </div>
             </div>
           </div>
-          <div>Angielski</div>
+          <div>English</div>
         </div>
       </div>
       <div className='border1'></div>

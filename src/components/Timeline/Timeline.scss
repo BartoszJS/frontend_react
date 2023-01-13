@@ -6,7 +6,7 @@
   box-sizing: border-box;
 }
 .vertical-timeline {
-  width: 95%;
+  width: 94%;
   max-width: 1170px;
   margin: 0 auto;
   position: relative;
@@ -64,7 +64,7 @@
 }
 @media only screen and (min-width: 1170px) {
   .vertical-timeline-element {
-    margin: 1em 0;
+    margin: 0em 0;
   }
   .vertical-timeline-element:first-child {
     margin-top: 0;
@@ -113,13 +113,13 @@
 }
 .vertical-timeline-element-icon svg {
   display: block;
-  width: 24px;
-  height: 24px;
+  width: 28px;
+  height: 28px;
   position: relative;
   left: 50%;
   top: 50%;
-  margin-left: -12px;
-  margin-top: -12px;
+  margin-left: -14px;
+  margin-top: -14px;
 }
 @media only screen and (min-width: 1170px) {
   .vertical-timeline--two-columns .vertical-timeline-element-icon {
