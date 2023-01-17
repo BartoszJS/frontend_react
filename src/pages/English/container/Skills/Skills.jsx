@@ -22,7 +22,7 @@ const Skills = () => {
 
   return (
     <div className='skills_cont'>
-      <h2 className='head-text2'>Umiejętności</h2>
+      <h2 className='head-text2'>Skills</h2>
 
       <Swiper
         effect={"coverflow"}

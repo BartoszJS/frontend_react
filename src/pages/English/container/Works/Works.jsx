@@ -12,11 +12,11 @@ const Works = () => {
 
   return (
     <div className='app__works_container'>
-      <h2 className='head-text2'>Moje projekty</h2>
+      <h2 className='head-text2'>My projects</h2>
       <div className='app__singlework-left'>
         <div className='app__singlework-text-smalldevices'>
           <div className='app__singlework-text-title'>
-            <h2>01. Znajdź zwierzaka</h2>
+            <h2>01. Znajdź zwierzaka (Find an animal)</h2>
           </div>
 
           <div className='app__singlework-text-lang'>

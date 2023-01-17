@@ -76,35 +76,35 @@ const SidebarWidth = () => {
             <div className='app__sidebar-data-info-left'>React</div>
             <div className='app__sidebar-data-info-right'>90%</div>
           </div>
-          <div className='Loading'></div>
+          <div className='Loadingreact'></div>
         </div>
         <div className='container'>
           <div className='app__sidebar-data-info'>
             <div className='app__sidebar-data-info-left'>HTML</div>
             <div className='app__sidebar-data-info-right'>90%</div>
           </div>
-          <div className='Loading'></div>
+          <div className='Loadinghtml'></div>
         </div>
         <div className='container'>
           <div className='app__sidebar-data-info'>
             <div className='app__sidebar-data-info-left'>CSS</div>
-            <div className='app__sidebar-data-info-right'>90%</div>
+            <div className='app__sidebar-data-info-right'>95%</div>
           </div>
-          <div className='Loading'></div>
+          <div className='Loadingcss'></div>
         </div>
         <div className='container'>
           <div className='app__sidebar-data-info'>
             <div className='app__sidebar-data-info-left'>NodeJS</div>
-            <div className='app__sidebar-data-info-right'>90%</div>
+            <div className='app__sidebar-data-info-right'>70%</div>
           </div>
-          <div className='Loading'></div>
+          <div className='Loadingjavascript'></div>
         </div>
         <div className='container'>
           <div className='app__sidebar-data-info'>
-            <div className='app__sidebar-data-info-left'>PHP</div>
+            <div className='app__sidebar-data-info-left'>Git</div>
             <div className='app__sidebar-data-info-right'>90%</div>
           </div>
-          <div className='Loading'></div>
+          <div className='Loadinggit'></div>
         </div>
       </div>
     </motion.div>

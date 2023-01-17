@@ -8,7 +8,7 @@ import { BsTelephoneFill } from "react-icons/bs";
 const Contact = () => {
   return (
     <div className='contact-page-bg'>
-      <h2 className='head-text3'>Kontakt</h2>
+      <h2 className='head-text3'>Contact</h2>
       <div className='contact-page'>
         <div className='contact-page-email'>
           <div className='contact-page-email-name'>

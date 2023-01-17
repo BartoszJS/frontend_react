@@ -112,7 +112,30 @@ const Skills = () => {
             </motion.div>
           </motion.div>
         </SwiperSlide>
-
+        <SwiperSlide>
+          <motion.div
+            whileInView={{ opacity: [1, 1] }}
+            transition={{ duration: 0 }}
+            className='app__skills-item-slider'
+          >
+            <p className='p-text'>GIT</p>
+            <div
+              className='html-slider app__flex'
+              style={{ backgroundColor: "rgba(45, 45, 60,0)" }}
+            >
+              <img src={images.git} alt='imag1e' />
+            </div>
+            <motion.div
+              initial={{ y: 0, x: 0, opacity: 1 }}
+              animate={{ y: 70, x: -40, opacity: 1 }}
+              transition={{ duration: 0 }}
+              className='nextjs-slider app__flex'
+              style={{ backgroundColor: "rgba(45, 45, 60,0)" }}
+            >
+              <img className='htmlphoto-slider' src={images.css} alt='imag1e' />
+            </motion.div>
+          </motion.div>
+        </SwiperSlide>
         <SwiperSlide>
           <motion.div
             whileInView={{ opacity: [1, 1] }}
@@ -189,8 +212,21 @@ const Skills = () => {
                 className='cssphoto-slider'
                 src={images.tailwind}
                 alt='imag1e'
+                style={{ transform: ` translateY(-15px)` }}
               />
-              <img className='cssphoto-slider' src={images.sass} alt='imag1e' />
+
+              <img
+                className='cssphoto-slider'
+                src={images.styledcomponents}
+                alt='imag1e'
+                style={{ transform: ` translateY(0px)` }}
+              />
+              <img
+                className='cssphoto-slider'
+                src={images.sass}
+                alt='imag1e'
+                style={{ transform: ` translateY(-15px)` }}
+              />
             </motion.div>
           </motion.div>
         </SwiperSlide>

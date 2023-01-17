@@ -28,6 +28,7 @@ import dotsblack from "../assets/dotsblack.svg";
 import spinneryellow from "../assets/spinneryellow.svg";
 import pl from "../assets/pl.png";
 import eng from "../assets/en.png";
+import styledcomponents from "../assets/styled-components.png";
 
 import js from "../assets/js.png";
 import html from "../assets/html.png";
@@ -115,4 +116,5 @@ export default {
   dotsblack,
   pl,
   eng,
+  styledcomponents,
 };
