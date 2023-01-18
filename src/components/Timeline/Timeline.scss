@@ -1,5 +1,6 @@
 .timeline-page-bg {
-  background-color: #282832;
+  //background-color: #282832;
+  background-color: #1e1e28;
 }
 
 .vertical-timeline * {
@@ -78,12 +79,12 @@
   display: grid;
   grid-template-columns: 10fr 1fr;
 }
+
 .vertical-timeline-element--work-flex-button {
   display: flex;
   justify-content: center;
   align-items: flex-end;
   height: 100%;
-  border: 1px solid red;
   width: 200px;
 }
 
@@ -96,6 +97,25 @@
 .vertical-timeline-element--work-flex-button-img:hover {
   transform: scale(250%) translateX(-54px);
   transition: transform 0.3s;
+  z-index: 55;
+}
+
+@media screen and (max-width: 992px) {
+  .vertical-timeline-element--work-flex {
+    grid-template-columns: 1fr;
+  }
+  .vertical-timeline-element--work-flex-button-img:hover {
+    transform: scale(200%) translateX(0px);
+    transition: transform 0.3s;
+  }
+  .vertical-timeline::before {
+    height: 82%;
+  }
+}
+@media screen and (max-width: 468px) {
+  .vertical-timeline-element--work-flex-button {
+    width: 150px;
+  }
 }
 
 .vertical-timeline-element-icon {

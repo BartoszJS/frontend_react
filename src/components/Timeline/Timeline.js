@@ -21,14 +21,14 @@ const Timeline = () => {
         layout='1-column'
       >
         <VerticalTimelineElement
-          onTimelineElementClick={() => {
-            // eslint-disable-next-line no-alert
-            alert("onTimelineElementClick event fired");
-          }}
+          // onTimelineElementClick={() => {
+          //   // eslint-disable-next-line no-alert
+          //   alert("onTimelineElementClick event fired");
+          // }}
           className='vertical-timeline-element--work'
           contentStyle={{
             border: "1px solid grey",
-            background: "#2d2d3c",
+            background: "#282832",
             color: "#fff",
           }}
           contentArrowStyle={{ borderRight: "5px solid white" }}
@@ -36,7 +36,7 @@ const Timeline = () => {
           icon={<SiJavascript />}
         >
           <div className='vertical-timeline-element--work-flex'>
-            <div>
+            <div className='vertical-timeline-element--work-flex-texxt'>
               <h3 className='vertical-timeline-element-title'>
                 Kurs JavaScript
               </h3>
@@ -60,7 +60,7 @@ const Timeline = () => {
           className='vertical-timeline-element--work'
           contentStyle={{
             border: "1px solid grey",
-            background: "#2d2d3c",
+            background: "#282832",
             color: "#fff",
           }}
           iconStyle={{ background: "white", color: "#000" }}
@@ -89,7 +89,7 @@ const Timeline = () => {
           className='vertical-timeline-element--work'
           contentStyle={{
             border: "1px solid grey",
-            background: "#2d2d3c",
+            background: "#282832",
             color: "#fff",
           }}
           iconStyle={{
@@ -124,7 +124,7 @@ const Timeline = () => {
           className='vertical-timeline-element--work'
           contentStyle={{
             border: "1px solid grey",
-            background: "#2d2d3c",
+            background: "#282832",
             color: "#fff",
           }}
           iconStyle={{ background: "white", color: "#000" }}

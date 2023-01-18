@@ -6,9 +6,23 @@
   padding-top: 2rem;
   font-weight: 600;
 }
+.head-text5 {
+  font-weight: 600;
+  font-size: 32px;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.about {
+  background-color: #282832;
+}
+
+.yellow {
+  color: rgb(255, 190, 0);
+}
 
 .aboutme {
-  margin-top: 3rem;
+  padding-top: 1.5rem;
   text-align: justify;
   width: 94%;
   max-width: 1170px;
@@ -24,6 +38,7 @@
   justify-content: flex-start;
   align-items: flex-start;
   margin-left: 5%;
+  margin-right: 5%;
   .about-me-header {
     color: white;
     text-align: left;
@@ -36,73 +51,43 @@
     justify-content: flex-start;
     align-items: flex-start;
     margin: 0rem auto 1rem auto;
-
     .aboutme-button-email {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       width: 200px;
-      height: 50px;
+      background-color: rgb(255, 190, 0);
       font-size: 18px;
-      color: black;
       border-radius: 5px;
+      .aboutme-button-email-icon {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 199px;
+      }
+      .aboutme-button-email-text {
+        transform: translateY(-8px);
+      }
     }
     .aboutme-button-phone {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       width: 200px;
-      height: 50px;
-      font-size: 20px;
-    }
-    .aboutme-button-cv {
-      width: 200px;
-      height: 50px;
-      font-size: 18px;
-      color: black;
-      border-radius: 5px;
-    }
-    .aboutme-button-email-text {
-      width: 200px;
-      height: 50px;
-      border-radius: 5px;
-    }
-    .aboutme-button-email {
       background-color: rgb(255, 190, 0);
-      border: 0;
-      opacity: 1;
-      font-size: 28px;
-      -webkit-box-shadow: 0px 13px 25px -21px rgba(255, 255, 255, 1);
-      -moz-box-shadow: 0px 13px 25px -21px rgba(255, 255, 255, 1);
-      box-shadow: 0px 13px 25px -21px rgba(255, 255, 255, 1);
-    }
-    .aboutme-button-email-second {
-      background-color: rgb(255, 190, 0);
-      border: 0;
-      width: 200px;
-      height: 50px;
-      opacity: 0.05;
-      position: absolute;
       font-size: 18px;
       border-radius: 5px;
-    }
-    .aboutme-button-email-second:hover {
-      opacity: 0.8;
-      transition: 0.3s;
-      z-index: 50;
-      -webkit-box-shadow: 0px 20px 25px -21px rgba(255, 255, 255, 1);
-      -moz-box-shadow: 0px 20px 25px -21px rgba(255, 255, 255, 1);
-      box-shadow: 0px 0px 40px -15px rgba(255, 255, 255, 1);
-    }
-    .aboutme-button-cv {
-      background-color: rgb(255, 190, 0);
-      border: 0;
-      opacity: 1;
-      font-size: 22px;
-      -webkit-box-shadow: 0px 13px 25px -21px rgba(255, 255, 255, 1);
-      -moz-box-shadow: 0px 13px 25px -21px rgba(255, 255, 255, 1);
-      box-shadow: 0px 13px 25px -21px rgba(255, 255, 255, 1);
-    }
-    .aboutme-button-cv:hover {
-      font-weight: 600;
-      transition: 0.2s;
-      -webkit-box-shadow: 0px 20px 25px -21px rgba(255, 255, 255, 1);
-      -moz-box-shadow: 0px 20px 25px -21px rgba(255, 255, 255, 1);
-      box-shadow: 0px 0px 40px -15px rgba(255, 255, 255, 1);
+      .aboutme-button-phone-icon {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 199px;
+      }
+      .aboutme-button-phone-text {
+        transform: translateY(-8px);
+      }
     }
   }
 }
@@ -113,6 +98,7 @@
   align-items: flex-start;
   .aboutme-text {
     color: white;
+    font-size: 16px;
   }
 }
 
