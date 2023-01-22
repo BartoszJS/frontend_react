@@ -2,6 +2,7 @@
   // background-color: rgb(40, 40, 50);
   background-color: #1e1e28;
   color: white;
+  padding-bottom: 40px;
 }
 
 .app__singlework-left {
@@ -14,7 +15,7 @@
   padding: 1rem;
   margin: 0 auto;
   max-width: 1170px;
-  margin-top: 80px;
+  margin-top: 40px;
 
   .app__singlework-img {
     grid-area: 1 / 1 / 2 / 2;
@@ -115,6 +116,7 @@
     .app__singlework-text-lang {
       display: flex;
       flex-wrap: wrap;
+      justify-content: flex-end;
       .single-lang {
         border: 1px solid grey;
         background-color: #282832;
@@ -221,7 +223,7 @@
   padding: 1rem;
   max-width: 1170px;
   margin: 0 auto;
-  margin-top: 80px;
+  margin-top: 40px;
 
   .app__singlework-img {
     border: 1px solid white;

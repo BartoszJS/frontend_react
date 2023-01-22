@@ -529,4 +529,4 @@ const Works = () => {
   );
 };
 
-export default MotionWrap(Works, "app__works");
+export default Works;

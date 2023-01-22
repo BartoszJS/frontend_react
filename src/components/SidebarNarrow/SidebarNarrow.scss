@@ -3,8 +3,9 @@
   width: 50px;
   top: 0;
   left: 0;
-  bottom: 0;
+  bottom: -100px;
   background-color: rgb(35, 35, 45);
+  padding-bottom: 100px;
 
   .text-language {
     color: rgb(200, 200, 200);
@@ -29,10 +30,10 @@
   .border1 {
     border-top: 1px solid rgb(200, 200, 200);
     width: 40px;
-    margin: 0;
     margin-left: auto;
     margin-right: auto;
-    padding: 0;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
   }
 
   .app__sidebar-narrow-languages {
@@ -54,6 +55,8 @@
       grid-template-columns: 1fr;
       text-align: center;
       width: 50px;
+      padding-top: 2vh;
+      padding-bottom: 1vh;
     }
     .circle-wrap-narrow {
       width: 50px;
@@ -182,7 +185,10 @@
     align-items: center;
     flex-direction: column;
     color: rgb(200, 200, 200);
-    font-size: 2.2em;
+    font-size: 2.5em;
     padding-bottom: 1vh;
+    .app__sidebar-narrow-single-icon {
+      margin-top: 1vh;
+    }
   }
 }

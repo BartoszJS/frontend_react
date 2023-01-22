@@ -22,8 +22,8 @@
 }
 
 .aboutme {
-  padding-top: 1.5rem;
-  text-align: justify;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
   width: 94%;
   max-width: 1170px;
   margin-left: auto;
@@ -57,14 +57,15 @@
       justify-content: center;
       align-items: center;
       width: 200px;
-      background-color: rgb(255, 190, 0);
       font-size: 18px;
-      border-radius: 5px;
+      color: white;
+      border: 2px solid rgb(255, 190, 0);
       .aboutme-button-email-icon {
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
         width: 199px;
+        color: rgb(255, 190, 0);
       }
       .aboutme-button-email-text {
         transform: translateY(-8px);
@@ -76,14 +77,15 @@
       justify-content: center;
       align-items: center;
       width: 200px;
-      background-color: rgb(255, 190, 0);
       font-size: 18px;
-      border-radius: 5px;
+      color: white;
+      border: 2px solid rgb(255, 190, 0);
       .aboutme-button-phone-icon {
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
         width: 199px;
+        color: rgb(255, 190, 0);
       }
       .aboutme-button-phone-text {
         transform: translateY(-8px);

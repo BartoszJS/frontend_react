@@ -26,7 +26,7 @@ const SidebarWidth = () => {
             ></img>
           </div>
           <div className='name'>Bartosz Płaza</div>
-          <div className='description'>Frontend Developer</div>
+          <div className='description'>Frontend Developerr</div>
         </div>
       </div>
       <div className='border1'></div>

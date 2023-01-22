@@ -26,13 +26,27 @@ const About = () => {
                 <span className='yellow'> stypendium naukowe</span> za
                 wyróżniające wyniki w nauce
               </p>
-
               <p>
+                Ukończyłem studia o kierunku
+                <span className='yellow'> informatyka</span> na UTH w Radomiu.
+                Przez cały tok studiów pobierałem
+                <span className='yellow'> stypendium naukowe</span> za
+                wyróżniające wyniki w nauce
+              </p>
+              <p>
+                Ukończyłem studia o kierunku
+                <span className='yellow'> informatyka</span> na UTH w Radomiu.
+                Przez cały tok studiów pobierałem
+                <span className='yellow'> stypendium naukowe</span> za
+                wyróżniające wyniki w nauce
+              </p>
+
+              {/* <p>
                 Jestem pracowitym i chłonnym człowiekiem. Ucząc się wykonałem
                 kilka kursów na Udemy, kurs Frontend Developera od strefy kursów
                 i przeczytałem kilka książek o programowaniu stron
                 internetowych.
-              </p>
+              </p> */}
               <p>Gwarantuje 100% zaangażowania </p>
             </div>
           </div>

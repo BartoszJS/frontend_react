@@ -272,4 +272,4 @@ const Skills = () => {
   );
 };
 
-export default MotionWrap(Skills, "app__skills");
+export default Skills;
