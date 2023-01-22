@@ -21,15 +21,15 @@ const Works = () => {
           </div>
 
           <div className='app__singlework-text-lang'>
-            <span className='single-lang'>React</span>
-            <span className='single-lang'>MongoDB</span>
-            <span className='single-lang'>NodeJS</span>
-            <span className='single-lang'>React</span>
+            <div className='single-lang'>React</div>
+            <div className='single-lang'>styled components</div>
+            <div className='single-lang'>MongoDB</div>
+            <div className='single-lang'>NodeJS</div>
           </div>
           <div className='app__singlework-text-icons'>
             <div className='app__singlework-text-icons-icon'>
               <a
-                href='https://homely-bartoszjs.vercel.app/'
+                href='https://github.com/BartoszJS/znajdz-zwierzaka-mern2.0'
                 target='_blank'
                 rel='noreferrer'
                 id='props-basic10'
@@ -53,7 +53,7 @@ const Works = () => {
 
             <div className='app__singlework-text-icons-icon'>
               <a
-                href='https://homely-bartoszjs.vercel.app/'
+                href='https://znajdz-zwierzaka.onrender.com/'
                 target='_blank'
                 rel='noreferrer'
                 id='props-basichomelyeye'
@@ -83,7 +83,7 @@ const Works = () => {
           className='app__singlework-img'
         >
           <a
-            href='https://homely-bartoszjs.vercel.app/'
+            href='https://znajdz-zwierzaka.onrender.com/'
             target='_blank'
             rel='noreferrer'
             id='props-basicznajdz'
@@ -111,15 +111,15 @@ const Works = () => {
           </div>
 
           <div className='app__singlework-text-lang'>
-            <span className='single-lang'>React</span>
-            <span className='single-lang'>MongoDB</span>
-            <span className='single-lang'>NodeJS</span>
-            <span className='single-lang'>React</span>
+            <div className='single-lang'>React</div>
+            <div className='single-lang'>MongoDB</div>
+            <div className='single-lang'>NodeJS</div>
+            <div className='single-lang'>React</div>
           </div>
           <div className='app__singlework-text-icons'>
             <div className='app__singlework-text-icons-icon'>
               <a
-                href='https://homely-bartoszjs.vercel.app/'
+                href='https://github.com/BartoszJS/znajdz-zwierzaka-mern'
                 target='_blank'
                 rel='noreferrer'
                 id='props-basic1222'
@@ -143,7 +143,7 @@ const Works = () => {
 
             <div className='app__singlework-text-icons-icon'>
               <a
-                href='https://homely-bartoszjs.vercel.app/'
+                href='https://znajdz-zwierzaka.onrender.com/'
                 target='_blank'
                 rel='noreferrer'
                 id='props-basic1libeye'
@@ -187,15 +187,14 @@ const Works = () => {
           </div>
 
           <div className='app__singlework-text-lang'>
-            <span className='single-lang'>React</span>
-            <span className='single-lang'>MongoDB</span>
-            <span className='single-lang'>NodeJS</span>
-            <span className='single-lang'>React</span>
+            <div className='single-lang'>React</div>
+            <div className='single-lang'>Tailwind</div>
+            <div className='single-lang'>Firebase</div>
           </div>
           <div className='app__singlework-text-icons'>
             <div className='app__singlework-text-icons-icon'>
               <a
-                href='https://homely-bartoszjs.vercel.app/'
+                href='https://github.com/BartoszJS/booking_2.0'
                 target='_blank'
                 rel='noreferrer'
                 id='props-basic111'
@@ -290,15 +289,15 @@ const Works = () => {
           </div>
 
           <div className='app__singlework-text-lang'>
-            <span className='single-lang'>PHP</span>
-            <span className='single-lang'>MySQL</span>
-            <span className='single-lang'>HTML</span>
-            <span className='single-lang'>CSS</span>
+            <div className='single-lang'>PHP</div>
+            <div className='single-lang'>MySQL</div>
+            <div className='single-lang'>HTML</div>
+            <div className='single-lang'>CSS</div>
           </div>
           <div className='app__singlework-text-icons'>
             <div className='app__singlework-text-icons-icon'>
               <a
-                href='https://homely-bartoszjs.vercel.app/'
+                href='https://github.com/BartoszJS/biblioteka'
                 target='_blank'
                 rel='noreferrer'
                 id='props-basic122'
@@ -322,7 +321,7 @@ const Works = () => {
 
             <div className='app__singlework-text-icons-icon'>
               <a
-                href='https://homely-bartoszjs.vercel.app/'
+                href='https://biblioteka-php.000webhostapp.com/'
                 target='_blank'
                 rel='noreferrer'
                 id='props-basiclibeye'
@@ -352,7 +351,7 @@ const Works = () => {
           className='app__singlework-img'
         >
           <a
-            href='https://homely-bartoszjs.vercel.app/'
+            href='https://biblioteka-php.000webhostapp.com/'
             target='_blank'
             rel='noreferrer'
             id='props-basiclibrary'
@@ -380,15 +379,15 @@ const Works = () => {
           </div>
 
           <div className='app__singlework-text-lang'>
-            <span className='single-lang'>PHP</span>
-            <span className='single-lang'>MySQL</span>
-            <span className='single-lang'>HTML</span>
-            <span className='single-lang'>CSS</span>
+            <div className='single-lang'>PHP</div>
+            <div className='single-lang'>MySQL</div>
+            <div className='single-lang'>HTML</div>
+            <div className='single-lang'>CSS</div>
           </div>
           <div className='app__singlework-text-icons'>
             <div className='app__singlework-text-icons-icon'>
               <a
-                href='https://homely-bartoszjs.vercel.app/'
+                href='https://github.com/BartoszJS/biblioteka'
                 target='_blank'
                 rel='noreferrer'
                 id='props-basic1232'
@@ -412,7 +411,7 @@ const Works = () => {
 
             <div className='app__singlework-text-icons-icon'>
               <a
-                href='https://homely-bartoszjs.vercel.app/'
+                href='https://biblioteka-php.000webhostapp.com/'
                 target='_blank'
                 rel='noreferrer'
                 id='props-basiclibeye1'
@@ -456,37 +455,13 @@ const Works = () => {
           </div>
 
           <div className='app__singlework-text-lang'>
-            <span className='single-lang'>Wordpress</span>
-            <span className='single-lang'>PHP</span>
+            <div className='single-lang'>Wordpress</div>
+            <div className='single-lang'>PHP</div>
           </div>
           <div className='app__singlework-text-icons'>
             <div className='app__singlework-text-icons-icon'>
               <a
-                href='https://homely-bartoszjs.vercel.app/'
-                target='_blank'
-                rel='noreferrer'
-                id='props-basic13'
-                data-tooltip-content='Zobacz kod!'
-                data-tooltip-place='bottom'
-              >
-                <Tooltip anchorId='props-basic13' />
-                <motion.div
-                  whileInView={{ scale: [1, 1] }}
-                  whileHover={{ scale: [1, 1.1] }}
-                  transition={{ duration: 0.1 }}
-                  className='anchors app__flex'
-                >
-                  <div className='icons-icon-inside'>
-                    {" "}
-                    <AiFillGithub />
-                  </div>
-                </motion.div>
-              </a>
-            </div>
-
-            <div className='app__singlework-text-icons-icon'>
-              <a
-                href='https://homely-bartoszjs.vercel.app/'
+                href='https://hol-car-czesci.pl/'
                 target='_blank'
                 rel='noreferrer'
                 id='props-basicholeye'
@@ -516,7 +491,7 @@ const Works = () => {
           className='app__singlework-img'
         >
           <a
-            href='https://homely-bartoszjs.vercel.app/'
+            href='https://hol-car-czesci.pl/'
             target='_blank'
             rel='noreferrer'
             id='props-basicholcarczesci'
