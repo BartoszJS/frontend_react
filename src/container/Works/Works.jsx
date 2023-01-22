@@ -34,7 +34,7 @@ const Works = () => {
                 rel='noreferrer'
                 id='props-basic10'
                 data-tooltip-content='Zobacz kod!'
-                data-tooltip-place='bottom'
+                data-tooltip-place='left'
               >
                 <Tooltip anchorId='props-basic10' />
                 <motion.div
@@ -58,7 +58,7 @@ const Works = () => {
                 rel='noreferrer'
                 id='props-basichomelyeye'
                 data-tooltip-content='Przejdź do strony!'
-                data-tooltip-place='bottom'
+                data-tooltip-place='left'
               >
                 <Tooltip anchorId='props-basichomelyeye' />
                 <motion.div
@@ -124,7 +124,7 @@ const Works = () => {
                 rel='noreferrer'
                 id='props-basic1222'
                 data-tooltip-content='Zobacz kod!'
-                data-tooltip-place='bottom'
+                data-tooltip-place='right'
               >
                 <Tooltip anchorId='props-basic1222' />
                 <motion.div

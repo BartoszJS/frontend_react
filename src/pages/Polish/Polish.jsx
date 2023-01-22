@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
   About,
   Contact,
@@ -21,9 +21,20 @@ import {
 import "./Polish.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { motion } from "framer-motion";
+import useWindowDimensions from "../../components/windowDimensions";
 
 const Polish = () => {
   const [toggle, setToggle] = useState(false);
+  const { height, width } = useWindowDimensions();
+
+  useEffect(() => {
+    if (width > 992) {
+      setToggle(false);
+    } else {
+      setToggle(true);
+    }
+  }, []);
+
   return (
     <div>
       <div className='app'>

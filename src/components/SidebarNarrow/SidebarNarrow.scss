@@ -1,9 +1,10 @@
 .app__sidebar-narrow {
   position: fixed;
   width: 50px;
+  top: 0;
   left: 0;
+  bottom: 0;
   background-color: rgb(35, 35, 45);
-  height: 100vh;
 
   .text-language {
     color: rgb(200, 200, 200);
