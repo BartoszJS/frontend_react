@@ -22,10 +22,13 @@ import "./Polish.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { motion } from "framer-motion";
 import useWindowDimensions from "../../components/windowDimensions";
+import { useRef } from "react";
 
 const Polish = () => {
   const [toggle, setToggle] = useState(false);
   const { height, width } = useWindowDimensions();
+  const resultRef = useRef(null);
+  const resultRefProjects = useRef(null);
 
   useEffect(() => {
     if (width > 992) {
@@ -57,25 +60,17 @@ const Polish = () => {
               <SidebarWidth />
             </div>
           )}
-          <a href='/english'>
+          {/* <a href='/english'>
             <Language />
-          </a>
-
+          </a> */}
           <NavigationDots />
-          <Header />
+          <Header resultRef={resultRef} resultRefProjects={resultRefProjects} />
           <Skills />
-          <Works />
-          {/* <Work /> */}
-          <About />
-
+          <Works ref={resultRefProjects} />
+          <About ref={resultRef} />
           <Timeline />
           <Footer />
         </div>
-        {/* <Work />
-      <Navbar />
-
-      <Skills />
-      <Footer /> */}
       </div>
     </div>
   );

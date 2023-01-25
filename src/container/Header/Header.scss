@@ -43,6 +43,7 @@
   h1 {
     font-size: 4rem;
     font-weight: 600;
+    text-align: left;
   }
   .textaligincenter {
     display: flex;
@@ -60,13 +61,35 @@
   .white {
     font-size: 4rem;
   }
+  .app__header_content-img-text-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    .app__header_content-img-text-div-1 {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+    .app__header_content-img-text-div-2 {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+  }
 
-  .button {
+  .buttonprojekty {
     background-color: rgb(255, 190, 0);
     padding: 1rem;
     font-weight: 600;
     border: none;
-    width: fit-content;
+    width: 150px;
+    text-align: center;
+  }
+  .buttonkontakt {
+    background-color: rgb(255, 190, 0);
+    padding: 1rem;
+    font-weight: 600;
+    border: none;
+    width: 150px;
   }
 
   @media screen and (max-width: 992px) {
@@ -86,19 +109,47 @@
     .button {
       padding: 0.7rem;
     }
+    .app__header_content-img-text-div {
+      grid-template-columns: 1fr;
+      .app__header_content-img-text-div-1 {
+        justify-content: center;
+        margin-bottom: 20px;
+      }
+      .app__header_content-img-text-div-2 {
+        justify-content: center;
+      }
+    }
+
+    .buttonprojekty {
+      background-color: rgb(255, 190, 0);
+      padding: 1rem;
+      font-weight: 600;
+      border: none;
+      width: 130px;
+      font-size: 12px;
+      text-align: center;
+    }
+    .buttonkontakt {
+      background-color: rgb(255, 190, 0);
+      padding: 1rem;
+      font-weight: 600;
+      border: none;
+      font-size: 12px;
+      width: 130px;
+    }
   }
   @media screen and (max-width: 390px) {
     h1 {
       font-size: 2.3rem;
     }
     .yellow {
-      font-size: 1.5rem;
+      font-size: 1.8rem;
     }
     .slash {
-      font-size: 1.5rem;
+      font-size: 1.8rem;
     }
     .white {
-      font-size: 1.5rem;
+      font-size: 1.8rem;
     }
     .button {
       font-size: 1rem;

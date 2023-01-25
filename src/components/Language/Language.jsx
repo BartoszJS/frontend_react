@@ -5,7 +5,8 @@ import "./Language.scss";
 const Language = () => {
   return (
     <div>
-      <img className='eng' src={images.eng} alt='eng' />
+      <div className='eng1'>ENG</div>
+      <img className='eng2' src={images.eng} alt='eng' />
     </div>
   );
 };

@@ -7,12 +7,13 @@ import { AppWrap, MotionWrap } from "../../wrapper";
 import { images } from "../../constants";
 import { Tooltip } from "react-tooltip";
 import "react-tooltip/dist/react-tooltip.css";
+import { forwardRef } from "react";
 
-const Works = () => {
+const Works = forwardRef((props, ref) => {
   const [animateCard, setAnimateCard] = useState({ y: 0, opacity: 1 });
 
   return (
-    <div className='app__works_container'>
+    <div className='app__works_container' ref={ref}>
       <h2 className='head-text2'>Moje projekty</h2>
       <div className='app__singlework-left'>
         <div className='app__singlework-text-smalldevices'>
@@ -527,6 +528,6 @@ const Works = () => {
       </div>
     </div>
   );
-};
+});
 
 export default Works;

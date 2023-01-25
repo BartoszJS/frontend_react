@@ -8,8 +8,9 @@ import { HiOutlinePhone, HiArrowCircleDown } from "react-icons/hi";
 import { MdOutlineMarkEmailUnread } from "react-icons/md";
 import { AiOutlinePhone } from "react-icons/ai";
 import { CgPushChevronDownO } from "react-icons/cg";
+import { forwardRef } from "react";
 
-const About = () => {
+const About = forwardRef((props, ref) => {
   return (
     <>
       <div className='about'>
@@ -50,36 +51,34 @@ const About = () => {
               <p>Gwarantuje 100% zaangażowania </p>
             </div>
           </div>
-          <div className='aboutme1-about'>
+          <div className='aboutme1-about' ref={ref}>
             <div className='head-text5'>Kontakt</div>
 
             <div className='aboutme-cont'>
-              <div className='aboutme-button-email'>
-                <div className='aboutme-button-email-icon'>
+              <div className='aboutme-button-phone'>
+                <div className='phone-icon'>
+                  {" "}
                   <MdOutlineMarkEmailUnread />
                 </div>
-
-                <div className='aboutme-button-email-text'>
-                  bartosz290300@wp.pl
-                </div>
+                bartosz290300@wp.pl
               </div>
             </div>
             <div className='aboutme-cont'>
               <div className='aboutme-button-phone'>
-                <div className='aboutme-button-phone-icon'>
+                <div className='phone-icon'>
+                  {" "}
                   <HiOutlinePhone />
                 </div>
-
-                <div className='aboutme-button-phone-text'>697-121-225</div>
+                697-121-225
               </div>
             </div>
             <div className='aboutme-cont'>
               <div className='aboutme-button-phone'>
-                <div className='aboutme-button-phone-icon'>
+                <div className='phone-icon'>
+                  {" "}
                   <CgPushChevronDownO />
                 </div>
-
-                <div className='aboutme-button-phone-text'>Pobierz CV</div>
+                Pobierz CV
               </div>
             </div>
           </div>
@@ -87,6 +86,6 @@ const About = () => {
       </div>
     </>
   );
-};
+});
 
 export default About;

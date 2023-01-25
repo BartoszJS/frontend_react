@@ -1,7 +1,15 @@
-.eng {
+.eng1 {
+  z-index: 100000;
+  position: fixed;
+  left: 11px;
+  top: 10px;
+  width: 30px;
+  color: white;
+}
+.eng2 {
   z-index: 100000;
   position: fixed;
   left: 10px;
-  top: 10px;
+  top: 30px;
   width: 30px;
 }

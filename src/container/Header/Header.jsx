@@ -15,7 +15,14 @@ const scaleVariants = {
     },
   },
 };
-const Header = () => {
+
+const Header = ({ resultRef, resultRefProjects }) => {
+  const onMoveContact = () => {
+    resultRef.current.scrollIntoView({ behavior: "smooth" });
+  };
+  const onMoveProjects = () => {
+    resultRefProjects.current.scrollIntoView({ behavior: "smooth" });
+  };
   return (
     <motion.div
       initial={{ y: -200, opacity: 0 }}
@@ -32,7 +39,18 @@ const Header = () => {
               <span className='yellow'>Portfolio</span>
               <span className='white'>{">"}</span>
             </p>
-            <button className='button'>MOJE PROJEKTY</button>
+            <div className='app__header_content-img-text-div'>
+              <div className='app__header_content-img-text-div-1'>
+                <button onClick={onMoveProjects} className='buttonprojekty'>
+                  MOJE PROJEKTY
+                </button>
+              </div>
+              <div className='app__header_content-img-text-div-2'>
+                <button onClick={onMoveContact} className='buttonkontakt'>
+                  KONTAKT
+                </button>
+              </div>
+            </div>
           </div>
           <div className='app__header_content-img-photo'>
             <img className='photo' src={images.me1} alt='profile' />

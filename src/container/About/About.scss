@@ -73,13 +73,17 @@
     }
     .aboutme-button-phone {
       display: flex;
-      flex-direction: column;
-      justify-content: center;
+      justify-content: flex-start;
       align-items: center;
       width: 200px;
       font-size: 18px;
       color: white;
-      border: 2px solid rgb(255, 190, 0);
+      .phone-icon {
+        color: rgb(255, 190, 0);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
       .aboutme-button-phone-icon {
         display: flex;
         justify-content: flex-start;
