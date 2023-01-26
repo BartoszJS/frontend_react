@@ -16,67 +16,6 @@ const Works = forwardRef((props, ref) => {
     <div className='app__works_container' ref={ref}>
       <h2 className='head-text2'>Moje projekty</h2>
       <div className='app__singlework-left'>
-        <div className='app__singlework-text-smalldevices'>
-          <div className='app__singlework-text-title'>
-            <h2>01. Znajdź zwierzaka</h2>
-          </div>
-
-          <div className='app__singlework-text-lang'>
-            <div className='single-lang'>React</div>
-            <div className='single-lang'>styled components</div>
-            <div className='single-lang'>MongoDB</div>
-            <div className='single-lang'>NodeJS</div>
-          </div>
-          <div className='app__singlework-text-icons'>
-            <div className='app__singlework-text-icons-icon'>
-              <a
-                href='https://github.com/BartoszJS/znajdz-zwierzaka-mern2.0'
-                target='_blank'
-                rel='noreferrer'
-                id='props-basic10'
-                data-tooltip-content='Zobacz kod!'
-                data-tooltip-place='left'
-              >
-                <Tooltip anchorId='props-basic10' />
-                <motion.div
-                  whileInView={{ scale: [1, 1] }}
-                  whileHover={{ scale: [1, 1.1] }}
-                  transition={{ duration: 0.1 }}
-                  className='anchors app__flex'
-                >
-                  <div className='icons-icon-inside'>
-                    {" "}
-                    <AiFillGithub />
-                  </div>
-                </motion.div>
-              </a>
-            </div>
-
-            <div className='app__singlework-text-icons-icon'>
-              <a
-                href='https://znajdz-zwierzaka.onrender.com/'
-                target='_blank'
-                rel='noreferrer'
-                id='props-basichomelyeye'
-                data-tooltip-content='Przejdź do strony!'
-                data-tooltip-place='left'
-              >
-                <Tooltip anchorId='props-basichomelyeye' />
-                <motion.div
-                  whileInView={{ scale: [1, 1] }}
-                  whileHover={{ scale: [1, 1.1] }}
-                  transition={{ duration: 0.1 }}
-                  className='anchors app__flex'
-                >
-                  <div className='icons-icon-inside'>
-                    {" "}
-                    <AiFillEye />
-                  </div>
-                </motion.div>
-              </a>
-            </div>
-          </div>
-        </div>
         <motion.div
           whileInView={{ scale: [1, 1] }}
           whileHover={{ scale: [1, 1] }}
@@ -168,16 +107,18 @@ const Works = forwardRef((props, ref) => {
           </div>
         </div>
         <div className='app__singlework-desc'>
-          <div>
-            <img
-              className='app__singlework-desc-icon'
-              src={images.react}
-              alt='react'
-            />
-          </div>
-          <div className='app__singlework-desc-text'>
-            Projekt strony internetowej pomagającej w znajdowaniu zaginionych
-            zwierząt.
+          <div className='app__singlework-desc-cont'>
+            <div>
+              <img
+                className='app__singlework-desc-icon'
+                src={images.react}
+                alt='react'
+              />
+            </div>
+            <div className='app__singlework-desc-text'>
+              Projekt strony internetowej pomagającej w znajdowaniu zaginionych
+              zwierząt.
+            </div>
           </div>
         </div>
       </div>
@@ -284,67 +225,6 @@ const Works = forwardRef((props, ref) => {
         </div>
       </div>
       <div className='app__singlework-left'>
-        <div className='app__singlework-text-smalldevices'>
-          <div className='app__singlework-text-title'>
-            <h2>03. Biblioteka</h2>
-          </div>
-
-          <div className='app__singlework-text-lang'>
-            <div className='single-lang'>PHP</div>
-            <div className='single-lang'>MySQL</div>
-            <div className='single-lang'>HTML</div>
-            <div className='single-lang'>CSS</div>
-          </div>
-          <div className='app__singlework-text-icons'>
-            <div className='app__singlework-text-icons-icon'>
-              <a
-                href='https://github.com/BartoszJS/biblioteka'
-                target='_blank'
-                rel='noreferrer'
-                id='props-basic122'
-                data-tooltip-content='Zobacz kod!'
-                data-tooltip-place='bottom'
-              >
-                <Tooltip anchorId='props-basic122' />
-                <motion.div
-                  whileInView={{ scale: [1, 1] }}
-                  whileHover={{ scale: [1, 1.1] }}
-                  transition={{ duration: 0.1 }}
-                  className='anchors app__flex'
-                >
-                  <div className='icons-icon-inside'>
-                    {" "}
-                    <AiFillGithub />
-                  </div>
-                </motion.div>
-              </a>
-            </div>
-
-            <div className='app__singlework-text-icons-icon'>
-              <a
-                href='https://biblioteka-php.000webhostapp.com/'
-                target='_blank'
-                rel='noreferrer'
-                id='props-basiclibeye'
-                data-tooltip-content='Przejdź do strony!'
-                data-tooltip-place='bottom'
-              >
-                <Tooltip anchorId='props-basiclibeye' />
-                <motion.div
-                  whileInView={{ scale: [1, 1] }}
-                  whileHover={{ scale: [1, 1.1] }}
-                  transition={{ duration: 0.1 }}
-                  className='anchors app__flex'
-                >
-                  <div className='icons-icon-inside'>
-                    {" "}
-                    <AiFillEye />
-                  </div>
-                </motion.div>
-              </a>
-            </div>
-          </div>
-        </div>
         <motion.div
           whileInView={{ scale: [1, 1] }}
           whileHover={{ scale: [1, 1] }}

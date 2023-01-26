@@ -13,9 +13,11 @@ const SocialMedia = () => {
       transition={{ duration: 1 }}
       className='app__social'
     >
-      <div className='engdiv'>
-        <div className='engtext'></div>
-      </div>
+      <a href='/english'>
+        <div className='engdiv'>
+          <div className='engtext'></div>
+        </div>
+      </a>
       <div className='app__social-icon'>
         <BsFacebook />
       </div>

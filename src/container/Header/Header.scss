@@ -40,6 +40,8 @@
   z-index: 500;
   padding-left: 5%;
   white-space: nowrap;
+  margin: 2rem;
+
   h1 {
     font-size: 4rem;
     font-weight: 600;
@@ -63,7 +65,8 @@
   }
   .app__header_content-img-text-div {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
     .app__header_content-img-text-div-1 {
       display: flex;
       justify-content: flex-start;
