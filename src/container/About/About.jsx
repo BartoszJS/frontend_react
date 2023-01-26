@@ -8,16 +8,16 @@ import { HiOutlinePhone, HiArrowCircleDown } from "react-icons/hi";
 import { MdOutlineMarkEmailUnread } from "react-icons/md";
 import { AiOutlinePhone } from "react-icons/ai";
 import { CgPushChevronDownO } from "react-icons/cg";
-import { forwardRef } from "react";
 
-const About = forwardRef((props, ref) => {
+const About = () => {
   return (
     <>
       <div className='about'>
+        <h2 className='head-text2'>O mnie</h2>
+
         <div className='aboutme'>
           <div className='aboutme2'>
             <div className='aboutme-text'>
-              <div className='head-text5'>O mnie</div>
               <h4>Nazywam się Bartosz Płaza.</h4>
               <p></p>
               <p>
@@ -51,41 +51,10 @@ const About = forwardRef((props, ref) => {
               <p>Gwarantuje 100% zaangażowania </p>
             </div>
           </div>
-          <div className='aboutme1-about' ref={ref}>
-            <div className='head-text5'>Kontakt</div>
-
-            <div className='aboutme-cont'>
-              <div className='aboutme-button-phone'>
-                <div className='phone-icon'>
-                  {" "}
-                  <MdOutlineMarkEmailUnread />
-                </div>
-                bartosz290300@wp.pl
-              </div>
-            </div>
-            <div className='aboutme-cont'>
-              <div className='aboutme-button-phone'>
-                <div className='phone-icon'>
-                  {" "}
-                  <HiOutlinePhone />
-                </div>
-                697-121-225
-              </div>
-            </div>
-            <div className='aboutme-cont'>
-              <div className='aboutme-button-phone'>
-                <div className='phone-icon'>
-                  {" "}
-                  <CgPushChevronDownO />
-                </div>
-                Pobierz CV
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </>
   );
-});
+};
 
 export default About;

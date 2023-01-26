@@ -2,7 +2,9 @@
   color: #fff;
   text-align: left;
   width: 100%;
-  padding-left: 4%;
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 2rem;
   font-weight: 600;
 }
@@ -10,7 +12,7 @@
   font-weight: 600;
   font-size: 32px;
   color: white;
-  margin-bottom: 15px;
+  margin-bottom: 4%;
 }
 
 .about {
@@ -22,80 +24,13 @@
 }
 
 .aboutme {
-  padding-top: 3rem;
+  padding-top: 1rem;
   padding-bottom: 2rem;
   width: 94%;
   max-width: 1170px;
   margin-left: auto;
   margin-right: auto;
   display: flex;
-  flex-direction: row;
-}
-
-.aboutme1-about {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  margin-left: 5%;
-  margin-right: 5%;
-  .about-me-header {
-    color: white;
-    text-align: left;
-    width: 100%;
-  }
-
-  .aboutme-cont {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    margin: 0rem auto 1rem auto;
-    .aboutme-button-email {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      width: 200px;
-      font-size: 18px;
-      color: white;
-      border: 2px solid rgb(255, 190, 0);
-      .aboutme-button-email-icon {
-        display: flex;
-        justify-content: flex-start;
-        align-items: flex-start;
-        width: 199px;
-        color: rgb(255, 190, 0);
-      }
-      .aboutme-button-email-text {
-        transform: translateY(-8px);
-      }
-    }
-    .aboutme-button-phone {
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
-      width: 200px;
-      font-size: 18px;
-      color: white;
-      .phone-icon {
-        color: rgb(255, 190, 0);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-      .aboutme-button-phone-icon {
-        display: flex;
-        justify-content: flex-start;
-        align-items: flex-start;
-        width: 199px;
-        color: rgb(255, 190, 0);
-      }
-      .aboutme-button-phone-text {
-        transform: translateY(-8px);
-      }
-    }
-  }
 }
 
 .aboutme2 {

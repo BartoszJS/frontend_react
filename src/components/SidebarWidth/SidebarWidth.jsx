@@ -3,6 +3,16 @@ import "./SidebarWidth.scss";
 import { images } from "../../constants";
 import { motion } from "framer-motion";
 import CountUp from "react-countup";
+import { FaReact } from "react-icons/fa";
+import { AiFillHtml5 } from "react-icons/ai";
+import {
+  SiJavascript,
+  SiPhp,
+  SiCss3,
+  SiTypescript,
+  SiHtml5,
+} from "react-icons/si";
+import { DiGit } from "react-icons/di";
 
 const SidebarWidth = () => {
   const [polish, setPolish] = useState(0);
@@ -106,6 +116,38 @@ const SidebarWidth = () => {
           </div>
           <div className='Loadinggit'></div>
         </div>
+        {/* <div className='app__sidebar-width-icons'>
+          <div className='app__sidebar-width-single-icon-top'>
+            <FaReact />
+          </div>
+          <div className='app__sidebar-width-single-icon-second'>
+            <div className='icon-css'>
+              <SiCss3 />
+            </div>
+            <div className='icon-js'>
+              {" "}
+              <SiJavascript />
+            </div>
+            <div className='icon-html'>
+              {" "}
+              <SiHtml5 />
+            </div>
+          </div>
+          <div className='app__sidebar-width-single-icon-third'>
+            <div className='icon-php'>
+              {" "}
+              <SiPhp />
+            </div>
+            <div className='icon-git'>
+              {" "}
+              <DiGit />
+            </div>
+            <div className='app__sidebar-width-single-icon-third-ts'>
+              {" "}
+              <SiTypescript />
+            </div>
+          </div>
+        </div> */}
       </div>
     </motion.div>
   );

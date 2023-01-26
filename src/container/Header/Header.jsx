@@ -32,28 +32,30 @@ const Header = ({ resultRef, resultRefProjects }) => {
     >
       <div className='app__header_content'>
         <div className='app__header_content-img'>
-          <div className='app__header_content-img-text'>
-            <h1 className='sas1234'>Bartosz Płaza</h1>
-            <p className='textaligincenter'>
-              <span className='white'>{"<"}</span>
-              <span className='yellow'>Portfolio</span>
-              <span className='white'>{">"}</span>
-            </p>
-            <div className='app__header_content-img-text-div'>
-              <div className='app__header_content-img-text-div-1'>
-                <button onClick={onMoveProjects} className='buttonprojekty'>
-                  MOJE PROJEKTY
-                </button>
-              </div>
-              <div className='app__header_content-img-text-div-2'>
-                <button onClick={onMoveContact} className='buttonkontakt'>
-                  KONTAKT
-                </button>
+          <div className='app__header_content-img-cont'>
+            <div className='app__header_content-img-text'>
+              <h1 className='sas1234'>Bartosz Płaza</h1>
+              <p className='textaligincenter'>
+                <span className='white'>{"<"}</span>
+                <span className='yellow'>Portfolio</span>
+                <span className='white'>{">"}</span>
+              </p>
+              <div className='app__header_content-img-text-div'>
+                <div className='app__header_content-img-text-div-1'>
+                  <button onClick={onMoveProjects} className='buttonprojekty'>
+                    MOJE PROJEKTY
+                  </button>
+                </div>
+                <div className='app__header_content-img-text-div-2'>
+                  <button onClick={onMoveContact} className='buttonkontakt'>
+                    KONTAKT
+                  </button>
+                </div>
               </div>
             </div>
-          </div>
-          <div className='app__header_content-img-photo'>
-            <img className='photo' src={images.me1} alt='profile' />
+            <div className='app__header_content-img-photo'>
+              <img className='photo' src={images.me1} alt='profile' />
+            </div>
           </div>
         </div>
       </div>

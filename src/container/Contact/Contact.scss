@@ -2,11 +2,76 @@
   color: #fff;
   text-align: left;
   width: 100%;
-  padding-left: 4%;
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 2rem;
   font-weight: 600;
 }
 
-.contact-page-bg {
-  background-color: rgb(40, 40, 50);
+.aboutme1-about {
+  background-color: #282832;
+  color: white;
+  padding: 1rem;
+}
+
+.contact-container {
+  max-width: 1170px;
+  width: 100%;
+
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: 1px solid white;
+}
+
+.aboutme-button-phone {
+  display: flex;
+}
+.text-on-border {
+  background-color: #282832;
+  width: fit-content;
+  color: white;
+  margin-left: -1px;
+  font-size: 30px;
+  height: 35px;
+  font-weight: 600;
+}
+
+.contact-container-1 {
+  margin-top: -25px;
+  margin-bottom: 30px;
+  .aboutme-button-phone {
+    font-size: 20px;
+  }
+  .aboutme-cont {
+    margin-left: 35%;
+    margin-right: 35%;
+  }
+  .phone-text {
+    padding-top: 3px;
+  }
+
+  .phone-icon {
+    color: rgb(250, 190, 0);
+  }
+}
+.contact-container-2 {
+  margin-top: 25px;
+  margin-bottom: 30px;
+  .aboutme-button-phone {
+    font-size: 20px;
+  }
+  .aboutme-cont {
+    margin-right: 35%;
+    margin-left: 35%;
+  }
+  .phone-text {
+    padding-top: 3px;
+  }
+
+  .phone-icon {
+    color: rgb(250, 190, 0);
+  }
 }

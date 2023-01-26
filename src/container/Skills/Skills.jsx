@@ -78,8 +78,6 @@ const Skills = () => {
               />
             </motion.div>
           </motion.div>
-          <div className='loading-css-skills'></div>
-          <div className='loading-empty'></div>
         </SwiperSlide>
         <SwiperSlide>
           <motion.div
@@ -113,8 +111,6 @@ const Skills = () => {
               />
             </motion.div>
           </motion.div>
-          <div className='loading-css-skills'></div>
-          <div className='loading-empty'></div>
         </SwiperSlide>
         <SwiperSlide>
           <motion.div
@@ -139,8 +135,6 @@ const Skills = () => {
               <img className='htmlphoto-slider' src={images.css} alt='imag1e' />
             </motion.div>
           </motion.div>
-          <div className='loading-css-skills'></div>
-          <div className='loading-empty'></div>
         </SwiperSlide>
         <SwiperSlide>
           <motion.div
@@ -148,12 +142,12 @@ const Skills = () => {
             transition={{ duration: 0 }}
             className='app__skills-item-slider'
           >
-            <p className='p-text'>Typescript</p>
+            <p className='p-text'>HTML</p>
             <div
               className='html-slider app__flex'
               style={{ backgroundColor: "rgba(45, 45, 60,0)" }}
             >
-              <img src={images.typescript} alt='imag1e' />
+              <img src={images.html} alt='imag1e' />
             </div>
             <motion.div
               initial={{ y: 0, x: 0, opacity: 1 }}
@@ -165,9 +159,8 @@ const Skills = () => {
               <img className='htmlphoto-slider' src={images.css} alt='imag1e' />
             </motion.div>
           </motion.div>
-          <div className='loading-css-skills'></div>
-          <div className='loading-empty'></div>
         </SwiperSlide>
+
         <SwiperSlide>
           <motion.div
             whileInView={{ opacity: [1, 1] }}
@@ -195,8 +188,6 @@ const Skills = () => {
               />
             </motion.div>
           </motion.div>
-          <div className='loading-css-skills'></div>
-          <div className='loading-empty'></div>
         </SwiperSlide>
         <SwiperSlide>
           <motion.div
@@ -204,12 +195,12 @@ const Skills = () => {
             transition={{ duration: 0 }}
             className='app__skills-item-slider'
           >
-            <p className='p-text'>HTML</p>
+            <p className='p-text'>Typescript</p>
             <div
               className='html-slider app__flex'
               style={{ backgroundColor: "rgba(45, 45, 60,0)" }}
             >
-              <img src={images.html} alt='imag1e' />
+              <img src={images.typescript} alt='imag1e' />
             </div>
             <motion.div
               initial={{ y: 0, x: 0, opacity: 1 }}
@@ -221,8 +212,6 @@ const Skills = () => {
               <img className='htmlphoto-slider' src={images.css} alt='imag1e' />
             </motion.div>
           </motion.div>
-          <div className='loading-css-skills'></div>
-          <div className='loading-empty'></div>
         </SwiperSlide>
         <SwiperSlide>
           <motion.div
@@ -265,8 +254,6 @@ const Skills = () => {
               />
             </motion.div>
           </motion.div>
-          <div className='loading-css-skills'></div>
-          <div className='loading-empty'></div>
         </SwiperSlide>
       </Swiper>
     </div>

@@ -2,9 +2,11 @@
   color: #fff;
   text-align: left;
   width: 100%;
-  padding-left: 2.5%;
   padding-top: 2rem;
   font-weight: 600;
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 html,
@@ -21,6 +23,7 @@ body {
 }
 .skills_cont {
   height: 45vh;
+  min-height: 270px;
   background: linear-gradient(
       180deg,
       rgba(30, 30, 40, 0.95) 0%,

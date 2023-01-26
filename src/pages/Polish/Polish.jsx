@@ -67,7 +67,8 @@ const Polish = () => {
           <Header resultRef={resultRef} resultRefProjects={resultRefProjects} />
           <Skills />
           <Works ref={resultRefProjects} />
-          <About ref={resultRef} />
+          <About />
+          <Contact ref={resultRef} />
           <Timeline />
           <Footer />
         </div>

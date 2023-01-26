@@ -3,11 +3,7 @@ import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
-import { AiFillEye, AiFillGithub } from "react-icons/ai";
-import { SiJavascript, SiReact } from "react-icons/si";
-import { FaReact } from "react-icons/fa";
-import { IoLogoJavascript } from "react-icons/";
-
+import { SiJavascript, SiReact, SiTypescript } from "react-icons/si";
 import "./Timeline.scss";
 import { images } from "../../constants";
 import { Spinneryellow, Dotsloading } from "../../components";
@@ -73,7 +69,7 @@ const Timeline = () => {
                 React, NodeJS, MongoDB
               </h5>
               <p>Długość kursu: 18,5h</p>
-              <p>09.2022-10.2022222</p>
+              <p>09.2022-10.2022</p>
             </div>
             <div className='vertical-timeline-element--work-flex-button'>
               <img
@@ -114,6 +110,40 @@ const Timeline = () => {
               <img
                 className='vertical-timeline-element--work-flex-button-img'
                 src={images.reactfirebase}
+                alt='mern'
+              />
+            </div>
+          </div>
+        </VerticalTimelineElement>
+        ,
+        <VerticalTimelineElement
+          className='vertical-timeline-element--work'
+          contentStyle={{
+            border: "1px solid grey",
+            background: "#282832",
+            color: "#fff",
+          }}
+          iconStyle={{
+            background: "white",
+            color: "#000",
+            width: "40px",
+            height: "40px ",
+            fontSize: "40px",
+          }}
+          icon={<SiTypescript />}
+        >
+          <div className='vertical-timeline-element--work-flex'>
+            <div>
+              <h3 className='vertical-timeline-element-title'>
+                Kurs Typescript
+              </h3>
+              <p>Długość kursu: 10,5h</p>
+              <p>01.2022</p>
+            </div>
+            <div className='vertical-timeline-element--work-flex-button'>
+              <img
+                className='vertical-timeline-element--work-flex-button-img'
+                src={images.typescriptcourse}
                 alt='mern'
               />
             </div>

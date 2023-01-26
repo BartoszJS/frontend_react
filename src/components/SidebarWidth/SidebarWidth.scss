@@ -339,6 +339,35 @@
     background: rgb(255, 190, 0);
   }
 }
+.app__sidebar-width-icons {
+  font-size: 40px;
+  text-align: center;
+  width: 100%;
+  padding-bottom: 5vh;
+  color: white;
+
+  .app__sidebar-width-single-icon-top {
+    font-size: 60px;
+  }
+
+  .app__sidebar-width-single-icon-second {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .app__sidebar-width-single-icon-third {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-left: 30px;
+    padding-right: 30px;
+
+    .app__sidebar-width-single-icon-third-ts {
+      padding-top: 7px;
+      font-size: 32px;
+    }
+  }
+}
 
 .Loadinghtml {
   position: relative;
