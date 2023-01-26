@@ -48,12 +48,16 @@
 .app__header_content-img-text {
   z-index: 500;
   padding-top: 30px;
+  padding-left: 1rem;
   h1 {
     font-size: 4rem;
     font-weight: 600;
     text-align: left;
+    white-space: nowrap;
+    position: absolute;
   }
   .textaligincenter {
+    padding-top: 80px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -70,7 +74,7 @@
     font-size: 4rem;
   }
   .app__header_content-img-text-div {
-    margin-top: 40px;
+    margin-top: 50px;
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 20px;
@@ -120,10 +124,9 @@
       padding: 0.7rem;
     }
     .app__header_content-img-text-div {
-      grid-template-columns: 1fr;
+      grid-template-columns: 1fr 1fr;
       .app__header_content-img-text-div-1 {
         justify-content: center;
-        margin-bottom: 20px;
       }
       .app__header_content-img-text-div-2 {
         justify-content: center;
@@ -132,20 +135,20 @@
 
     .buttonprojekty {
       background-color: rgb(255, 190, 0);
-      padding: 1rem;
+      padding: 1rem 0 1rem 0;
       font-weight: 600;
       border: none;
-      width: 130px;
+      width: 120px;
       font-size: 12px;
       text-align: center;
     }
     .buttonkontakt {
       background-color: rgb(255, 190, 0);
-      padding: 1rem;
+      padding: 1rem 0 1rem 0;
       font-weight: 600;
       border: none;
       font-size: 12px;
-      width: 130px;
+      width: 120px;
     }
   }
   @media screen and (max-width: 390px) {
@@ -169,10 +172,11 @@
 }
 .app__header_content-img-photo {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: flex-end;
   height: 50vh;
   min-height: 300px;
+  margin-right: 20px;
 
   .photo {
     height: 100%;
@@ -184,8 +188,31 @@
 }
 
 @media screen and (max-width: 992px) {
+  .app__header_content-img-text {
+    .app__header_content-img-text-div {
+      margin-top: 0px;
+    }
+  }
+
+  .app__header_content {
+    color: white;
+    background: linear-gradient(
+        180deg,
+        rgba(30, 30, 40, 0.6) 0%,
+        rgba(30, 30, 40, 1) 80%
+      ),
+      url("../../assets/DALLESHORT.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 55vh;
+    min-height: 330px;
+    padding-top: 3vh;
+  }
+
   .app__header_content {
     height: 100vh;
+    min-height: 600px;
   }
   .app__header_content-img-cont {
     background: linear-gradient(
@@ -201,18 +228,23 @@
     background-size: cover;
     grid-template-columns: 1fr;
     height: 100vh;
+    border: 1px solid red;
+    min-height: 600px;
   }
   .app__header_content-img-photo {
+    height: 100%;
+    border: 1px solid red;
     justify-content: flex-end;
     align-items: flex-end;
     .photo {
       height: 60vh;
+      min-height: 350px;
     }
   }
   .app__header_content-img-text {
     text-align: center;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-direction: column;
     .textaligincenter {
@@ -224,9 +256,6 @@
 }
 
 @media screen and (max-width: 500px) {
-  .app__header_content {
-    padding-top: 0vh;
-  }
   .app__header_content-img-cont {
     margin-left: 0rem;
     margin-right: 0rem;
@@ -250,5 +279,14 @@
       max-width: 250px;
       object-fit: contain;
     }
+  }
+}
+@media screen and (max-width: 450px) {
+  .app__header_content-img {
+    margin-left: 0rem;
+    margin-right: 0rem;
+  }
+  .app__header_content {
+    padding-top: 0vh;
   }
 }

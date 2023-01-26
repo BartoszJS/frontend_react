@@ -20,7 +20,12 @@ const Contact = forwardRef((props, ref) => {
                 {" "}
                 <HiOutlinePhone />
               </div>
-              <div className='phone-text'>697-121-225</div>
+
+              <div className='phone-text'>
+                <a className='link-phone' href='tel:697121225'>
+                  697-121-225
+                </a>
+              </div>
             </div>
           </div>
           <div className='aboutme-cont'>

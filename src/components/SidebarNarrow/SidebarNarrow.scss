@@ -32,8 +32,8 @@
     width: 40px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 3vh;
-    margin-bottom: 3vh;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
   }
 
   .app__sidebar-narrow-languages {
@@ -186,9 +186,9 @@
     flex-direction: column;
     color: rgb(200, 200, 200);
     font-size: 2.5em;
-    padding-bottom: 1vh;
+    padding-bottom: 20vh;
     .app__sidebar-narrow-single-icon {
-      margin-top: 1vh;
+      margin-top: 0vh;
     }
   }
 }

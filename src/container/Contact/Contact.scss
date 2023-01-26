@@ -12,7 +12,7 @@
 .aboutme1-about {
   background-color: #282832;
   color: white;
-  padding: 1rem;
+  padding: 3rem 1rem 1rem 1rem;
 }
 
 .contact-container {
@@ -49,8 +49,15 @@
     margin-left: 35%;
     margin-right: 35%;
   }
+
   .phone-text {
-    padding-top: 3px;
+    padding-top: 1px;
+    color: white;
+    .link-phone {
+      text-decoration: none;
+      color: white;
+      cursor: pointer;
+    }
   }
 
   .phone-icon {
@@ -68,10 +75,54 @@
     margin-left: 35%;
   }
   .phone-text {
-    padding-top: 3px;
+    padding-top: 2px;
   }
 
   .phone-icon {
     color: rgb(250, 190, 0);
+  }
+  .aboutme-button-phone:hover {
+    color: rgb(250, 190, 0);
+    transition: 0.2s;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .contact-container {
+    grid-template-columns: 1fr;
+  }
+  .contact-container-1 {
+    text-align: center;
+
+    .aboutme-cont {
+      margin-left: 10%;
+      margin-right: 10%;
+    }
+  }
+  .contact-container-2 {
+    .aboutme-cont {
+      margin-right: 10%;
+      margin-left: 10%;
+    }
+  }
+}
+@media screen and (max-width: 400px) {
+  .contact-container {
+    grid-template-columns: 1fr;
+  }
+  .contact-container-1 {
+    text-align: center;
+
+    .aboutme-cont {
+      margin-left: 0%;
+      margin-right: 0%;
+    }
+  }
+  .contact-container-2 {
+    .aboutme-cont {
+      margin-right: 0%;
+      margin-left: 0%;
+    }
   }
 }

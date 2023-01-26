@@ -128,7 +128,8 @@
       border: 1px solid grey;
       font-size: 16px;
       text-align: left;
-      height: 80px;
+      height: fit-content;
+      min-height: 80px;
       z-index: 100;
       margin-right: 0%;
       margin-left: 0%;
@@ -153,24 +154,22 @@
   }
 }
 
-@media screen and (max-width: 1200px) {
-  .app__singlework-left {
-  }
-}
-
 @media screen and (max-width: 992px) {
   .app__singlework-left {
     display: flex;
     flex-direction: column;
+    .app__singlework-text {
+      padding-bottom: 10px;
+    }
 
     .app__singlework-desc {
       margin-top: 10px;
 
       margin-right: 0;
       margin-left: 0;
+      .app__singlework-desc-cont {
+        width: 100%;
+      }
     }
   }
-}
-
-@media screen and (max-width: 992px) {
 }
