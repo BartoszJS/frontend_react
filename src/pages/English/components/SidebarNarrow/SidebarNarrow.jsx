@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { images } from "../../../../constants";
 import { FaReact } from "react-icons/fa";
 import { AiFillHtml5 } from "react-icons/ai";
-import { SiJavascript, SiPhp, SiCss3 } from "react-icons/si";
+import { SiJavascript, SiPhp, SiCss3, SiTypescript } from "react-icons/si";
 import { motion } from "framer-motion";
 
 import CountUp from "react-countup";
@@ -45,7 +45,7 @@ const SidebarNarrow = () => {
               </div>
             </div>
           </div>
-          <div className='text-language'>Polski</div>
+          <div className='text-language'>Polish</div>
         </div>
         <div className='app__sidebar-narrow-languages-english'>
           <div className='circle-wrap1-narrow'>
@@ -63,7 +63,7 @@ const SidebarNarrow = () => {
               </div>
             </div>
           </div>
-          <div className='text-language'>Angielski</div>
+          <div className='text-language'>English</div>
         </div>
       </div>
       <div className='border1'></div>
@@ -72,16 +72,16 @@ const SidebarNarrow = () => {
           <FaReact />
         </div>
         <div className='app__sidebar-narrow-single-icon'>
-          <AiFillHtml5 />
-        </div>
-        <div className='app__sidebar-narrow-single-icon'>
           <SiJavascript />
         </div>
         <div className='app__sidebar-narrow-single-icon'>
-          <SiPhp />
+          <AiFillHtml5 />
         </div>
         <div className='app__sidebar-narrow-single-icon'>
           <SiCss3 />
+        </div>
+        <div className='app__sidebar-narrow-single-icon'>
+          <SiTypescript />
         </div>
       </div>
     </motion.div>

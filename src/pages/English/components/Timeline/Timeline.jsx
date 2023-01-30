@@ -4,14 +4,16 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import { SiJavascript, SiReact, SiTypescript } from "react-icons/si";
-import "./Timeline.scss";
-import { images } from "../../constants";
-import { Spinneryellow, Dotsloading } from "../../components";
+import { images } from "../../../../constants";
+import { Spinneryellow, Dotsloading } from "..";
 
 const Timeline = () => {
   return (
     <div className='timeline-page-bg'>
-      <h2 className='head-text3'>Kursy</h2>
+      <div className='border-container'>
+        <div className='border-timeline'></div>
+        <p className='header-courses'>Courses</p>
+      </div>
       <VerticalTimeline
         className='vertical-timeline-custom-line'
         layout='1-column'
@@ -34,12 +36,12 @@ const Timeline = () => {
           <div className='vertical-timeline-element--work-flex'>
             <div className='vertical-timeline-element--work-flex-texxt'>
               <h3 className='vertical-timeline-element-title'>
-                Kurs JavaScript
+                JavaScript course
               </h3>
               <h4 className='vertical-timeline-element-subtitle'>
                 Front-end Developer
               </h4>
-              <p>Długość kursu: 62h</p>
+              <p>Course length: 62h</p>
               <p>06.2022-09.2022</p>
             </div>
             <div className='vertical-timeline-element--work-flex-button'>
@@ -68,7 +70,7 @@ const Timeline = () => {
               <h5 className='vertical-timeline-element-subtitle'>
                 React, NodeJS, MongoDB
               </h5>
-              <p>Długość kursu: 18,5h</p>
+              <p>Course length: 18,5h</p>
               <p>09.2022-10.2022</p>
             </div>
             <div className='vertical-timeline-element--work-flex-button'>
@@ -103,7 +105,7 @@ const Timeline = () => {
               <h4 className='vertical-timeline-element-subtitle'>
                 React, Firebase
               </h4>
-              <p>Długość kursu: 18h</p>
+              <p>Course length: 18h</p>
               <p>10.2022-11.2022</p>
             </div>
             <div className='vertical-timeline-element--work-flex-button'>
@@ -137,7 +139,7 @@ const Timeline = () => {
               <h3 className='vertical-timeline-element-title'>
                 Kurs Typescript
               </h3>
-              <p>Długość kursu: 10,5h</p>
+              <p>Course length: 10,5h</p>
               <p>01.2022</p>
             </div>
             <div className='vertical-timeline-element--work-flex-button'>
@@ -164,8 +166,8 @@ const Timeline = () => {
             <Dotsloading />
           </h4>
 
-          <p>Rozwijanie umiejętności programistycznych</p>
-          <p>2020 - teraz</p>
+          <p>Developing programming skills...</p>
+          <p>2020 - now</p>
         </VerticalTimelineElement>
         ,
       </VerticalTimeline>

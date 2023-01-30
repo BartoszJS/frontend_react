@@ -90,29 +90,29 @@ const SidebarWidth = () => {
         </div>
         <div className='container'>
           <div className='app__sidebar-data-info'>
-            <div className='app__sidebar-data-info-left'>HTML</div>
-            <div className='app__sidebar-data-info-right'>90%</div>
+            <div className='app__sidebar-data-info-left'>JavaScript</div>
+            <div className='app__sidebar-data-info-right'>85%</div>
           </div>
           <div className='Loadinghtml'></div>
         </div>
         <div className='container'>
           <div className='app__sidebar-data-info'>
-            <div className='app__sidebar-data-info-left'>CSS</div>
-            <div className='app__sidebar-data-info-right'>95%</div>
+            <div className='app__sidebar-data-info-left'>HTML</div>
+            <div className='app__sidebar-data-info-right'>90%</div>
           </div>
           <div className='Loadingcss'></div>
         </div>
         <div className='container'>
           <div className='app__sidebar-data-info'>
-            <div className='app__sidebar-data-info-left'>NodeJS</div>
-            <div className='app__sidebar-data-info-right'>70%</div>
+            <div className='app__sidebar-data-info-left'>CSS</div>
+            <div className='app__sidebar-data-info-right'>90%</div>
           </div>
           <div className='Loadingjavascript'></div>
         </div>
         <div className='container'>
           <div className='app__sidebar-data-info'>
-            <div className='app__sidebar-data-info-left'>Git</div>
-            <div className='app__sidebar-data-info-right'>90%</div>
+            <div className='app__sidebar-data-info-left'>Typescript</div>
+            <div className='app__sidebar-data-info-right'>70%</div>
           </div>
           <div className='Loadinggit'></div>
         </div>

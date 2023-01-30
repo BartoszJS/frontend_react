@@ -18,12 +18,20 @@ const SocialMedia = () => {
           <div className='engtext'></div>
         </div>
       </a>
-      <div className='app__social-icon'>
-        <BsFacebook />
-      </div>
-      <div className='app__social-icon'>
-        <BsGithub />
-      </div>
+      <a
+        href='https://www.facebook.com/profile.php?id=100003097261536'
+        target='_blank'
+        rel='noreferrer'
+      >
+        <div className='app__social-icon'>
+          <BsFacebook />
+        </div>
+      </a>
+      <a href='https://github.com/BartoszJS' target='_blank' rel='noreferrer'>
+        <div className='app__social-icon'>
+          <BsGithub />
+        </div>
+      </a>
     </motion.div>
   );
 };

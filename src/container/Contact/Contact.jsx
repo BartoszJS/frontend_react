@@ -11,9 +11,12 @@ import { AiFillGithub } from "react-icons/ai";
 const Contact = forwardRef((props, ref) => {
   return (
     <div className='aboutme1-about' ref={ref}>
+      <div className='border-container-contact'>
+        <div className='border-timeline'></div>
+        <p className='header-contact'>Kontakt</p>
+      </div>
       <div className='contact-container'>
         <div className='contact-container-1'>
-          <p className='text-on-border'>Kontakt</p>
           <div className='aboutme-cont'>
             <div className='aboutme-button-phone'>
               <div className='phone-icon'>
@@ -45,7 +48,17 @@ const Contact = forwardRef((props, ref) => {
                 {" "}
                 <AiFillGithub />
               </div>
-              <div className='phone-text'>Github</div>
+
+              <div className='phone-text'>
+                <a
+                  className='link-phone'
+                  href='https://github.com/BartoszJS'
+                  target='_blank'
+                  rel='noreferrer'
+                >
+                  Github
+                </a>
+              </div>
             </div>
           </div>
           <div className='aboutme-cont'>

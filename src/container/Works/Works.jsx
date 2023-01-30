@@ -14,7 +14,10 @@ const Works = forwardRef((props, ref) => {
 
   return (
     <div className='app__works_container' ref={ref}>
-      <h2 className='head-text2'>Moje projekty</h2>
+      <div className='border-container'>
+        <div className='border-timeline'></div>
+        <p className='header-courses'>Moje projekty</p>
+      </div>
       <div className='app__singlework-left'>
         <div className='app__singlework-text'>
           <div className='app__singlework-text-title'>
@@ -122,6 +125,7 @@ const Works = forwardRef((props, ref) => {
           </div>
         </div>
       </div>
+      <div className='border-works'></div>
       <div className='app__singlework-left'>
         <div className='app__singlework-text'>
           <div className='app__singlework-text-title'>
@@ -227,6 +231,7 @@ const Works = forwardRef((props, ref) => {
           </div>
         </div>
       </div>
+      <div className='border-works'></div>
       <div className='app__singlework-left'>
         <div className='app__singlework-text'>
           <div className='app__singlework-text-title'>
@@ -332,6 +337,7 @@ const Works = forwardRef((props, ref) => {
           </div>
         </div>
       </div>
+      <div className='border-works'></div>
       <div className='app__singlework-left'>
         <div className='app__singlework-text'>
           <div className='app__singlework-text-title'>

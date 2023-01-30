@@ -2,6 +2,16 @@ import React, { useState, useEffect } from "react";
 import { images } from "../../../../constants";
 import { motion } from "framer-motion";
 import CountUp from "react-countup";
+import { FaReact } from "react-icons/fa";
+import { AiFillHtml5 } from "react-icons/ai";
+import {
+  SiJavascript,
+  SiPhp,
+  SiCss3,
+  SiTypescript,
+  SiHtml5,
+} from "react-icons/si";
+import { DiGit } from "react-icons/di";
 
 const SidebarWidth = () => {
   const [polish, setPolish] = useState(0);
@@ -75,36 +85,68 @@ const SidebarWidth = () => {
             <div className='app__sidebar-data-info-left'>React</div>
             <div className='app__sidebar-data-info-right'>90%</div>
           </div>
-          <div className='Loading'></div>
+          <div className='Loadingreact'></div>
+        </div>
+        <div className='container'>
+          <div className='app__sidebar-data-info'>
+            <div className='app__sidebar-data-info-left'>JavaScript</div>
+            <div className='app__sidebar-data-info-right'>85%</div>
+          </div>
+          <div className='Loadinghtml'></div>
         </div>
         <div className='container'>
           <div className='app__sidebar-data-info'>
             <div className='app__sidebar-data-info-left'>HTML</div>
             <div className='app__sidebar-data-info-right'>90%</div>
           </div>
-          <div className='Loading'></div>
+          <div className='Loadingcss'></div>
         </div>
         <div className='container'>
           <div className='app__sidebar-data-info'>
             <div className='app__sidebar-data-info-left'>CSS</div>
             <div className='app__sidebar-data-info-right'>90%</div>
           </div>
-          <div className='Loading'></div>
+          <div className='Loadingjavascript'></div>
         </div>
         <div className='container'>
           <div className='app__sidebar-data-info'>
-            <div className='app__sidebar-data-info-left'>NodeJS</div>
-            <div className='app__sidebar-data-info-right'>90%</div>
+            <div className='app__sidebar-data-info-left'>Typescript</div>
+            <div className='app__sidebar-data-info-right'>70%</div>
           </div>
-          <div className='Loading'></div>
+          <div className='Loadinggit'></div>
         </div>
-        <div className='container'>
-          <div className='app__sidebar-data-info'>
-            <div className='app__sidebar-data-info-left'>PHP</div>
-            <div className='app__sidebar-data-info-right'>90%</div>
+        {/* <div className='app__sidebar-width-icons'>
+          <div className='app__sidebar-width-single-icon-top'>
+            <FaReact />
           </div>
-          <div className='Loading'></div>
-        </div>
+          <div className='app__sidebar-width-single-icon-second'>
+            <div className='icon-css'>
+              <SiCss3 />
+            </div>
+            <div className='icon-js'>
+              {" "}
+              <SiJavascript />
+            </div>
+            <div className='icon-html'>
+              {" "}
+              <SiHtml5 />
+            </div>
+          </div>
+          <div className='app__sidebar-width-single-icon-third'>
+            <div className='icon-php'>
+              {" "}
+              <SiPhp />
+            </div>
+            <div className='icon-git'>
+              {" "}
+              <DiGit />
+            </div>
+            <div className='app__sidebar-width-single-icon-third-ts'>
+              {" "}
+              <SiTypescript />
+            </div>
+          </div>
+        </div> */}
       </div>
     </motion.div>
   );

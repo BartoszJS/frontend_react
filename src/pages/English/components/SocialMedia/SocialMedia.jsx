@@ -2,6 +2,7 @@ import React from "react";
 import { BsGithub, BsFacebook } from "react-icons/bs";
 import { FaFacebookF } from "react-icons/fa";
 import { motion } from "framer-motion";
+import { images } from "../../../../constants";
 
 const SocialMedia = () => {
   return (
@@ -11,10 +12,15 @@ const SocialMedia = () => {
       transition={{ duration: 1 }}
       className='app__social'
     >
-      <div>
+      <a href='/'>
+        <div className='engdiv'>
+          <div className='pltext'></div>
+        </div>
+      </a>
+      <div className='app__social-icon'>
         <BsFacebook />
       </div>
-      <div>
+      <div className='app__social-icon'>
         <BsGithub />
       </div>
     </motion.div>

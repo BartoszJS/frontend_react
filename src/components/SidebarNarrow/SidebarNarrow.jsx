@@ -3,7 +3,7 @@ import { images } from "../../constants";
 import "./SidebarNarrow.scss";
 import { FaReact } from "react-icons/fa";
 import { AiFillHtml5 } from "react-icons/ai";
-import { SiJavascript, SiPhp, SiCss3 } from "react-icons/si";
+import { SiJavascript, SiPhp, SiCss3, SiTypescript } from "react-icons/si";
 import { motion } from "framer-motion";
 
 import CountUp from "react-countup";
@@ -73,16 +73,16 @@ const SidebarNarrow = () => {
           <FaReact />
         </div>
         <div className='app__sidebar-narrow-single-icon'>
-          <AiFillHtml5 />
-        </div>
-        <div className='app__sidebar-narrow-single-icon'>
           <SiJavascript />
         </div>
         <div className='app__sidebar-narrow-single-icon'>
-          <SiPhp />
+          <AiFillHtml5 />
         </div>
         <div className='app__sidebar-narrow-single-icon'>
           <SiCss3 />
+        </div>
+        <div className='app__sidebar-narrow-single-icon'>
+          <SiTypescript />
         </div>
       </div>
     </motion.div>

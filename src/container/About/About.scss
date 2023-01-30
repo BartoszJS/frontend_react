@@ -9,39 +9,76 @@
   font-weight: 600;
   padding-left: 1rem;
 }
-.head-text5 {
-  font-weight: 600;
-  font-size: 32px;
+
+.text-on-border-about {
+  background-color: #282832;
+  width: fit-content;
   color: white;
-  margin-bottom: 4%;
-  padding-left: 1rem;
+  margin-left: -1px;
+  font-size: 30px;
+  height: 35px;
+  transform: translateY(-40px);
+  font-weight: 600;
 }
 
 .about {
   background-color: #282832;
+  padding-top: 5px;
+  padding-top: 2rem;
 }
 
 .yellow {
   color: rgb(255, 190, 0);
+  text-decoration: none;
+}
+.yellow-link {
+  color: rgb(255, 190, 0);
+  text-decoration: none;
+  cursor: pointer;
+}
+.yellow-link:hover {
+  color: rgb(255, 190, 0);
+  text-decoration: underline;
+}
+
+.programming-methods {
+  cursor: default;
+}
+
+.yellow-method {
+  color: rgb(255, 190, 0);
+  text-decoration: none;
+  cursor: default;
+}
+.yellow-method:hover {
+  color: rgb(255, 190, 0);
+  text-decoration: underline;
 }
 
 .aboutme {
-  padding-top: 1rem;
+  margin-top: 1rem;
   width: 100%;
   padding: 1rem;
   max-width: 1170px;
   margin-left: auto;
   margin-right: auto;
-  display: flex;
+}
+
+.head-text2-about {
+  background-color: #282832;
 }
 
 .aboutme2 {
+  margin-top: -30px;
   display: flex;
+  flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+
   .aboutme-text {
     color: white;
     font-size: 16px;
+    text-align: justify;
   }
 }
 

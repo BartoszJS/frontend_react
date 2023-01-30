@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
   About,
   Contact,
@@ -21,9 +21,23 @@ import {
 import "./English.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { motion } from "framer-motion";
+import useWindowDimensions from "../../components/windowDimensions";
+import { useRef } from "react";
 
 const English = () => {
   const [toggle, setToggle] = useState(false);
+  const { height, width } = useWindowDimensions();
+  const resultRef = useRef(null);
+  const resultRefProjects = useRef(null);
+
+  useEffect(() => {
+    if (width > 992) {
+      setToggle(false);
+    } else {
+      setToggle(true);
+    }
+  }, []);
+
   return (
     <div>
       <div className='app'>
@@ -46,24 +60,17 @@ const English = () => {
               <SidebarWidth />
             </div>
           )}
-          <a href='/'>
+          {/* <a href='/english'>
             <Language />
-          </a>
-
-          <NavigationDots />
-          <Header />
+          </a> */}
+          <Header resultRef={resultRef} resultRefProjects={resultRefProjects} />
           <Skills />
-          <Works />
-          <Work />
+          <Works ref={resultRefProjects} />
           <About />
-          <Contact />
+          <Contact ref={resultRef} />
           <Timeline />
+          <Footer />
         </div>
-        {/* <Work />
-      <Navbar />
-
-      <Skills />
-      <Footer /> */}
       </div>
     </div>
   );

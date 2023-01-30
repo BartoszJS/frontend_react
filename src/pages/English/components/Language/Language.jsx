@@ -4,7 +4,8 @@ import { images } from "../../../../constants";
 const Language = () => {
   return (
     <div>
-      <img className='eng' src={images.pl} alt='eng' />
+      <div className='eng1'>ENG</div>
+      <img className='eng2' src={images.eng} alt='eng' />
     </div>
   );
 };

@@ -47,7 +47,7 @@
 
 .app__header_content-img-text {
   z-index: 500;
-  padding-top: 30px;
+  padding-top: 60px;
   padding-left: 1rem;
   h1 {
     font-size: 4rem;
@@ -188,6 +188,9 @@
 }
 
 @media screen and (max-width: 992px) {
+  .app__header_content-img-photo {
+    margin-right: 0px;
+  }
   .app__header_content-img-text {
     .app__header_content-img-text-div {
       margin-top: 0px;
@@ -228,12 +231,10 @@
     background-size: cover;
     grid-template-columns: 1fr;
     height: 100vh;
-    border: 1px solid red;
     min-height: 600px;
   }
   .app__header_content-img-photo {
     height: 100%;
-    border: 1px solid red;
     justify-content: flex-end;
     align-items: flex-end;
     .photo {

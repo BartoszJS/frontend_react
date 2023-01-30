@@ -3,6 +3,16 @@
   background-color: #1e1e28;
   color: white;
   padding-bottom: 40px;
+  padding-top: 10px;
+}
+
+.border-works {
+  border-top: 1px solid grey;
+  max-width: 1170px;
+  width: 100%;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .app__singlework-left {
@@ -15,7 +25,7 @@
   padding: 1rem;
   margin: 0 auto;
   max-width: 1170px;
-  margin-top: 40px;
+  margin-top: 30px;
   .app__singlework-img {
     grid-area: 1 / 2 / 3 / 3;
     border-top: 1px solid white;

@@ -1,7 +1,5 @@
 import React from "react";
-
 import { motion } from "framer-motion";
-import { MotionWrap } from "../../../../wrapper";
 import { images } from "../../../../constants";
 
 const scaleVariants = {
@@ -14,7 +12,14 @@ const scaleVariants = {
     },
   },
 };
-const Header = () => {
+
+const Header = ({ resultRef, resultRefProjects }) => {
+  const onMoveContact = () => {
+    resultRef.current.scrollIntoView({ behavior: "smooth" });
+  };
+  const onMoveProjects = () => {
+    resultRefProjects.current.scrollIntoView({ behavior: "smooth" });
+  };
   return (
     <motion.div
       initial={{ y: -200, opacity: 0 }}
@@ -24,17 +29,30 @@ const Header = () => {
     >
       <div className='app__header_content'>
         <div className='app__header_content-img'>
-          <div className='app__header_content-img-text'>
-            <h1 className='sas1234'>Bartosz Płaza</h1>
-            <p className='textaligincenter'>
-              <span className='white'>{"<"}</span>
-              <span className='yellow'>Portfolio</span>
-              <span className='white'>{">"}</span>
-            </p>
-            <button className='button'>MY PROJECTS</button>
-          </div>
-          <div className='app__header_content-img-photo'>
-            <img className='photo' src={images.me1} alt='profile' />
+          <div className='app__header_content-img-cont'>
+            <div className='app__header_content-img-text'>
+              <h1 className='sas1234'>Bartosz Płaza</h1>
+              <p className='textaligincenter'>
+                <span className='white'>{"<"}</span>
+                <span className='yellow'>Portfolio</span>
+                <span className='white'>{">"}</span>
+              </p>
+              <div className='app__header_content-img-text-div'>
+                <div className='app__header_content-img-text-div-1'>
+                  <button onClick={onMoveProjects} className='buttonprojekty'>
+                    MY PROJECTS
+                  </button>
+                </div>
+                <div className='app__header_content-img-text-div-2'>
+                  <button onClick={onMoveContact} className='buttonkontakt'>
+                    CONTACT
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div className='app__header_content-img-photo'>
+              <img className='photo' src={images.me1} alt='profile' />
+            </div>
           </div>
         </div>
       </div>

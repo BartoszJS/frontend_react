@@ -63,7 +63,6 @@ const Polish = () => {
           {/* <a href='/english'>
             <Language />
           </a> */}
-          <NavigationDots />
           <Header resultRef={resultRef} resultRefProjects={resultRefProjects} />
           <Skills />
           <Works ref={resultRefProjects} />

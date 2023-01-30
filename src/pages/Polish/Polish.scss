@@ -16,23 +16,12 @@
 }
 
 .swiper-button-next {
-  visibility: hidden;
+  visibility: visible;
   color: rgb(255, 190, 0);
-  padding-bottom: 80px;
 }
 .swiper-button-prev {
-  visibility: hidden;
+  visibility: visible;
   color: rgb(255, 190, 0);
-  padding-bottom: 80px;
-}
-
-@media screen and (max-width: 768px) {
-  .swiper-button-next {
-    visibility: visible;
-  }
-  .swiper-button-prev {
-    visibility: visible;
-  }
 }
 
 .app__sidebar-big-toggle {

@@ -3,36 +3,39 @@ import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
-import { AiFillEye, AiFillGithub } from "react-icons/ai";
-import { SiJavascript, SiReact } from "react-icons/si";
-import { images } from "../../../../constants";
-import { Spinneryellow, Dotsloading } from "../../components";
+import { SiJavascript, SiReact, SiTypescript } from "react-icons/si";
+import "./Timeline.scss";
+import { images } from "../../constants";
+import { Spinneryellow, Dotsloading } from "..";
 
 const Timeline = () => {
   return (
     <div className='timeline-page-bg'>
-      <h2 className='head-text3'>Kursy</h2>
+      <div className='border-container'>
+        <div className='border-timeline'></div>
+        <p className='header-courses'>Kursy</p>
+      </div>
       <VerticalTimeline
         className='vertical-timeline-custom-line'
         layout='1-column'
       >
         <VerticalTimelineElement
-          onTimelineElementClick={() => {
-            // eslint-disable-next-line no-alert
-            alert("onTimelineElementClick event fired");
-          }}
+          // onTimelineElementClick={() => {
+          //   // eslint-disable-next-line no-alert
+          //   alert("onTimelineElementClick event fired");
+          // }}
           className='vertical-timeline-element--work'
           contentStyle={{
             border: "1px solid grey",
-            background: "#2d2d3c",
+            background: "#282832",
             color: "#fff",
           }}
-          contentArrowStyle={{ borderRight: "7px solid  white" }}
+          contentArrowStyle={{ borderRight: "5px solid white" }}
           iconStyle={{ background: "white", color: "#000" }}
           icon={<SiJavascript />}
         >
           <div className='vertical-timeline-element--work-flex'>
-            <div>
+            <div className='vertical-timeline-element--work-flex-texxt'>
               <h3 className='vertical-timeline-element-title'>
                 Kurs JavaScript
               </h3>
@@ -56,11 +59,11 @@ const Timeline = () => {
           className='vertical-timeline-element--work'
           contentStyle={{
             border: "1px solid grey",
-            background: "#2d2d3c",
+            background: "#282832",
             color: "#fff",
           }}
           iconStyle={{ background: "white", color: "#000" }}
-          icon={<AiFillEye />}
+          icon={<SiReact />}
         >
           <div className='vertical-timeline-element--work-flex'>
             <div>
@@ -69,7 +72,7 @@ const Timeline = () => {
                 React, NodeJS, MongoDB
               </h5>
               <p>Długość kursu: 18,5h</p>
-              <p>09.2022-10.2022222</p>
+              <p>09.2022-10.2022</p>
             </div>
             <div className='vertical-timeline-element--work-flex-button'>
               <img
@@ -85,10 +88,16 @@ const Timeline = () => {
           className='vertical-timeline-element--work'
           contentStyle={{
             border: "1px solid grey",
-            background: "#2d2d3c",
+            background: "#282832",
             color: "#fff",
           }}
-          iconStyle={{ background: "white", color: "#000" }}
+          iconStyle={{
+            background: "white",
+            color: "#000",
+            width: "40px",
+            height: "40px ",
+            fontSize: "40px",
+          }}
           icon={<SiReact />}
         >
           <div className='vertical-timeline-element--work-flex'>
@@ -114,7 +123,41 @@ const Timeline = () => {
           className='vertical-timeline-element--work'
           contentStyle={{
             border: "1px solid grey",
-            background: "#2d2d3c",
+            background: "#282832",
+            color: "#fff",
+          }}
+          iconStyle={{
+            background: "white",
+            color: "#000",
+            width: "40px",
+            height: "40px ",
+            fontSize: "40px",
+          }}
+          icon={<SiTypescript />}
+        >
+          <div className='vertical-timeline-element--work-flex'>
+            <div>
+              <h3 className='vertical-timeline-element-title'>
+                Kurs Typescript
+              </h3>
+              <p>Długość kursu: 10,5h</p>
+              <p>01.2022</p>
+            </div>
+            <div className='vertical-timeline-element--work-flex-button'>
+              <img
+                className='vertical-timeline-element--work-flex-button-img'
+                src={images.typescriptcourse}
+                alt='mern'
+              />
+            </div>
+          </div>
+        </VerticalTimelineElement>
+        ,
+        <VerticalTimelineElement
+          className='vertical-timeline-element--work'
+          contentStyle={{
+            border: "1px solid grey",
+            background: "#282832",
             color: "#fff",
           }}
           iconStyle={{ background: "white", color: "#000" }}

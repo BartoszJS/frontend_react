@@ -1,34 +1,78 @@
 import React, { useState, useEffect } from "react";
-import { motion } from "framer-motion";
-import { MotionWrap } from "../../../../wrapper";
-import { images } from "../../../../constants";
 import { MdEmail } from "react-icons/md";
-import { BsTelephoneFill } from "react-icons/bs";
+import { HiOutlinePhone, HiArrowCircleDown } from "react-icons/hi";
+import { MdOutlineMarkEmailUnread } from "react-icons/md";
+import { AiOutlinePhone } from "react-icons/ai";
+import { CgPushChevronDownO } from "react-icons/cg";
+import { forwardRef } from "react";
+import { AiFillGithub } from "react-icons/ai";
 
-const Contact = () => {
+const Contact = forwardRef((props, ref) => {
   return (
-    <div className='contact-page-bg'>
-      <h2 className='head-text3'>Contact</h2>
-      <div className='contact-page'>
-        <div className='contact-page-email'>
-          <div className='contact-page-email-name'>
-            <MdEmail />
-            <div>E-mail</div>
+    <div className='aboutme1-about' ref={ref}>
+      <div className='border-container-contact'>
+        <div className='border-timeline'></div>
+        <p className='header-contact'>Contact</p>
+      </div>
+      <div className='contact-container'>
+        <div className='contact-container-1'>
+          <div className='aboutme-cont'>
+            <div className='aboutme-button-phone'>
+              <div className='phone-icon'>
+                {" "}
+                <HiOutlinePhone />
+              </div>
+
+              <div className='phone-text'>
+                <a className='link-phone' href='tel:697121225'>
+                  697-121-225
+                </a>
+              </div>
+            </div>
           </div>
-          <button className='contact-page-email-button'>
-            bartosz290300@wp.pl
-          </button>
+          <div className='aboutme-cont'>
+            <div className='aboutme-button-phone'>
+              <div className='phone-icon'>
+                {" "}
+                <MdOutlineMarkEmailUnread />
+              </div>
+              <div className='phone-text'>bartosz290300@wp.pl</div>
+            </div>
+          </div>
         </div>
-        <div className='contact-page-phone'>
-          <div className='contact-page-phone-name'>
-            <BsTelephoneFill />
-            <div>Nr telefonu</div>
+        <div className='contact-container-2'>
+          <div className='aboutme-cont'>
+            <div className='aboutme-button-phone'>
+              <div className='phone-icon'>
+                {" "}
+                <AiFillGithub />
+              </div>
+
+              <div className='phone-text'>
+                <a
+                  className='link-phone'
+                  href='https://github.com/BartoszJS'
+                  target='_blank'
+                  rel='noreferrer'
+                >
+                  Github
+                </a>
+              </div>
+            </div>
           </div>
-          <button className='contact-page-phone-button'>697-121-225</button>
+          <div className='aboutme-cont'>
+            <div className='aboutme-button-phone'>
+              <div className='phone-icon'>
+                {" "}
+                <CgPushChevronDownO />
+              </div>
+              <div className='phone-text'> Download CV</div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   );
-};
+});
 
 export default Contact;

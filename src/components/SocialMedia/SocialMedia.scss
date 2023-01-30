@@ -14,7 +14,7 @@
     border-radius: 50%;
     background-color: rgb(10, 10, 20);
     margin: 0.25rem 0;
-
+    cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -66,6 +66,22 @@
     cursor: pointer;
   }
   .engdiv:hover .engtext {
+    height: 40px;
+    width: 40px;
+    transition: 0.2s;
+  }
+  .pltext {
+    color: white;
+    background-image: url(../../assets/pl.png);
+    background-position: center;
+    background-size: cover;
+    height: 20px;
+    width: 20px;
+    font-weight: 400;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .engdiv:hover .pltext {
     height: 40px;
     width: 40px;
     transition: 0.2s;
