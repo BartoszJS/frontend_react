@@ -21,7 +21,12 @@ const Skills = () => {
   const [experience, setExperience] = useState([]);
 
   return (
-    <div className='skills_cont'>
+    <motion.div
+      initial={{ y: 500, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: 0.5 }}
+      className='skills_cont'
+    >
       <h2 className='head-text2'>Umiejętności</h2>
 
       <Swiper
@@ -256,7 +261,7 @@ const Skills = () => {
           </motion.div>
         </SwiperSlide>
       </Swiper>
-    </div>
+    </motion.div>
   );
 };
 
