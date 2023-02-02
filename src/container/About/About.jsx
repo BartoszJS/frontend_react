@@ -23,7 +23,7 @@ const About = () => {
               <h4>Nazywam się Bartosz Płaza.</h4>
               <p></p>
               <p>
-                Ukończyłem studia o kierunku
+                Ukończyłem studia na kierunku
                 <span className='yellow'> informatyka</span> na UTH w Radomiu.
                 Przez cały przebieg studiów pobierałem
                 <span className='yellow'> stypendium naukowe</span> za

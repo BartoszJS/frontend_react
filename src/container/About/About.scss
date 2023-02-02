@@ -83,6 +83,11 @@
 }
 
 @media screen and (max-width: 992px) {
+  .aboutme2 {
+    .aboutme-text {
+      font-size: 14px;
+    }
+  }
   .aboutme {
     flex-direction: column;
   }

@@ -120,7 +120,7 @@ const Works = forwardRef((props, ref) => {
             </div>
             <div className='app__singlework-desc-text'>
               Projekt strony internetowej pomagającej w znajdowaniu zaginionych
-              zwierząt. (Aktywacja może potrwać do 30sek.)
+              zwierząt. (Aktywacja może potrwać ponad 30sek.)
             </div>
           </div>
         </div>
