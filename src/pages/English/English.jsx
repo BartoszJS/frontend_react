@@ -44,8 +44,10 @@ const English = () => {
         <div className={`${toggle ? "smallpx" : "bigpx"}`}>
           <motion.div
             whileTap={{ scale: 0 }}
+            transition={{ duration: 1 }}
+            initial={{ x: -600, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
             onClick={() => setToggle(!toggle)}
-            transition={{ duration: 0.5 }}
             className={`${
               toggle ? "app__sidebar-small-toggle" : "app__sidebar-big-toggle"
             }`}
@@ -61,8 +63,8 @@ const English = () => {
             </div>
           )}
           {/* <a href='/english'>
-            <Language />
-          </a> */}
+          <Language />
+        </a> */}
           <Header resultRef={resultRef} resultRefProjects={resultRefProjects} />
           <Skills />
           <Works ref={resultRefProjects} />

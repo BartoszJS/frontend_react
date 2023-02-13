@@ -20,8 +20,131 @@ const About = () => {
         <div className='aboutme'>
           <div className='aboutme2'>
             <div className='aboutme-text'>
-              <h4>Nazywam się Bartosz Płaza.</h4>
-              <p></p>
+              {/* <h4>Bartosz Płaza</h4>
+               <p>
+                <span className='yellow'>Wykształcenie</span>: wyższe, kierunek:
+                informatyka.
+                <p>Stypendium naukowe przez cały przebieg studiów.</p>
+              </p>
+              <p>
+                <span className='yellow'>Praktyki zawodowe</span>: MRSolutions
+                <br></br>
+                <span>
+                  <span>Wykonane projekty: </span>
+                  <br></br>
+                  <a
+                    href='https://szamborambo.pl/szamba-z-wykopem/'
+                    target='_blank'
+                    rel='noreferrer'
+                    className='yellow-link'
+                  >
+                    szamborambo.pl/szamba-z-wykopem
+                  </a>
+                </span>{" "}
+                <br></br>
+                <span>
+                  <a
+                    href='https://betonpref.pl/'
+                    target='_blank'
+                    rel='noreferrer'
+                    className='yellow-link'
+                  >
+                    betonpref.pl
+                  </a>
+                </span>
+              </p>
+
+              <p>
+                <p className='programming-methods'>
+                  <span className='yellow'> Umiejętnośći: </span>
+                  <span className='yellow-method'>React</span>{" "}
+                  <span className='yellow-method'>JavaScript</span>{" "}
+                  <span className='yellow-method'>HTML</span>{" "}
+                  <span className='yellow-method'>CSS</span>{" "}
+                  <span className='yellow-method'>TypeScript</span>{" "}
+                  <span className='yellow-method'>Git</span>{" "}
+                  <span className='yellow-method'>NodeJS</span>{" "}
+                  <span className='yellow-method'>PHP</span>
+                </p>
+              </p> */}
+
+              <div className='aboutme-container-grid'>
+                <div>
+                  <h4>Nazywam się Bartosz Płaza.</h4>
+                  <p>
+                    <span className='yellow'>Wykształcenie</span>: wyższe,
+                    kierunek: informatyka.
+                    <p>
+                      Stypendium naukowe przez cały przebieg studiów za
+                      wyróżniające wyniki w nauce
+                    </p>
+                  </p>
+                  <p>
+                    <span className='yellow'>Praktyki zawodowe</span>: firma
+                    MRSolutions
+                    <br></br>
+                    <span>
+                      <span>Wykonane strony internetowe: </span>
+                      <br></br>
+                      <a
+                        href='https://szamborambo.pl/szamba-z-wykopem/'
+                        target='_blank'
+                        rel='noreferrer'
+                        className='yellow-link'
+                      >
+                        szamborambo.pl/szamba-z-wykopem
+                      </a>
+                    </span>{" "}
+                    <br></br>
+                    <span>
+                      <a
+                        href='https://betonpref.pl/'
+                        target='_blank'
+                        rel='noreferrer'
+                        className='yellow-link'
+                      >
+                        betonpref.pl
+                      </a>
+                    </span>
+                  </p>
+                  <p>
+                    <span className='yellow'>
+                      Gwarantuje 100% zaangażowania.
+                    </span>
+                  </p>
+                </div>
+                <div>
+                  <h4>Umiejętności</h4>
+                  <div className='aboutme-grid'>
+                    <div className='aboutme-grid-div'>
+                      <div className='aboutme-grid-border'>React</div>
+                    </div>
+                    <div className='aboutme-grid-div'>
+                      <div className='aboutme-grid-border'>JavaScript</div>
+                    </div>
+                    <div className='aboutme-grid-div'>
+                      <div className='aboutme-grid-border'> HTML</div>
+                    </div>
+                    <div className='aboutme-grid-div'>
+                      <div className='aboutme-grid-border'>CSS</div>
+                    </div>
+                    <div className='aboutme-grid-div'>
+                      <div className='aboutme-grid-border'>TypeScript</div>
+                    </div>
+                    <div className='aboutme-grid-div'>
+                      <div className='aboutme-grid-border'>Git</div>
+                    </div>
+                    <div className='aboutme-grid-div'>
+                      <div className='aboutme-grid-border'>NodeJS</div>
+                    </div>
+                    <div className='aboutme-grid-div'>
+                      <div className='aboutme-grid-border'>PHP</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* <h4>Nazywam się Bartosz Płaza.</h4>
               <p>
                 Ukończyłem studia na kierunku
                 <span className='yellow'> informatyka</span> na UTH w Radomiu.
@@ -74,7 +197,7 @@ const About = () => {
                 <span className='yellow-method'>NodeJS</span>{" "}
                 <span className='yellow-method'>PHP</span>
               </p>
-              <p>Gwarantuje 100% zaangażowania. </p>
+              <p>Gwarantuje 100% zaangażowania. </p> */}
             </div>
           </div>
         </div>

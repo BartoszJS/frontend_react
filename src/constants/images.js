@@ -30,6 +30,7 @@ import pl from "../assets/pl.png";
 import eng from "../assets/en.png";
 import styledcomponents from "../assets/styled-components.png";
 import typescriptcourse from "../assets/typescript.jpeg";
+import becomeaprogrammer from "../assets/become-a-programmer.png";
 
 import js from "../assets/js.png";
 import html from "../assets/html.png";
@@ -119,4 +120,5 @@ export default {
   eng,
   styledcomponents,
   typescriptcourse,
+  becomeaprogrammer,
 };

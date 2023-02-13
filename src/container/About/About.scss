@@ -32,8 +32,8 @@
   text-decoration: none;
 }
 .yellow-link {
-  color: rgb(255, 190, 0);
-  text-decoration: none;
+  color: white;
+  text-decoration: underline;
   cursor: pointer;
 }
 .yellow-link:hover {
@@ -44,14 +44,16 @@
 .programming-methods {
   cursor: default;
 }
+.bold {
+  font-weight: 600;
+}
 
 .yellow-method {
-  color: rgb(255, 190, 0);
+  color: white;
   text-decoration: none;
   cursor: default;
 }
 .yellow-method:hover {
-  color: rgb(255, 190, 0);
   text-decoration: underline;
 }
 
@@ -77,12 +79,43 @@
 
   .aboutme-text {
     color: white;
-    font-size: 16px;
-    text-align: justify;
+    font-size: 17px;
+  }
+}
+
+.aboutme-container-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.aboutme-grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 40px;
+  font-size: 20px;
+
+  .aboutme-grid-div {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .aboutme-grid-border {
+    padding: 10px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: default;
   }
 }
 
 @media screen and (max-width: 992px) {
+  .aboutme-container-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
   .aboutme2 {
     .aboutme-text {
       font-size: 14px;
