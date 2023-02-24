@@ -25,6 +25,7 @@ const Works = forwardRef((props, ref) => {
             <div className='single-lang'>React</div>
             <div className='single-lang'>NextJS</div>
             <div className='single-lang'>Typescript</div>
+            <div className='single-lang'>Tailwind</div>
             <div className='single-lang'>Firebase</div>
             <div className='single-lang'>Sanity</div>
             <div className='single-lang'>Stripe</div>
@@ -37,7 +38,7 @@ const Works = forwardRef((props, ref) => {
                 rel='noreferrer'
                 id='props-basicbapp'
                 data-tooltip-content='Source code!'
-                data-tooltip-place='right'
+                data-tooltip-place='top'
               >
                 <Tooltip anchorId='props-basicbapp' />
                 <motion.div
@@ -61,7 +62,7 @@ const Works = forwardRef((props, ref) => {
                 rel='noreferrer'
                 id='props-basic1bap'
                 data-tooltip-content='Go to website!'
-                data-tooltip-place='right'
+                data-tooltip-place='top'
               >
                 <Tooltip anchorId='props-basic1bap' />
                 <motion.div
@@ -91,7 +92,7 @@ const Works = forwardRef((props, ref) => {
             rel='noreferrer'
             id='props-basicbap'
             data-tooltip-content='Go to website!'
-            data-tooltip-place={`${window.innerWidth > 992 ? "right" : "top"}`}
+            data-tooltip-place={`${window.innerWidth > 992 ? "top" : "top"}`}
           >
             <Tooltip anchorId='props-basicbap' />
 
@@ -118,7 +119,7 @@ const Works = forwardRef((props, ref) => {
               />
             </div>
             <div className='app__singlework-desc-text'>
-              Project of a website containing video courses.
+              E-commerce. Project of a website containing video courses.
             </div>
           </div>
         </div>
@@ -144,7 +145,7 @@ const Works = forwardRef((props, ref) => {
                 rel='noreferrer'
                 id='props-basichoomely'
                 data-tooltip-content='Source code!'
-                data-tooltip-place='right'
+                data-tooltip-place='top'
               >
                 <Tooltip anchorId='props-basichoomely' />
                 <motion.div
@@ -168,7 +169,7 @@ const Works = forwardRef((props, ref) => {
                 rel='noreferrer'
                 id='props-basichomelyeye'
                 data-tooltip-content='Go to website!'
-                data-tooltip-place='right'
+                data-tooltip-place='top'
               >
                 <Tooltip anchorId='props-basichomelyeye' />
                 <motion.div
@@ -198,7 +199,7 @@ const Works = forwardRef((props, ref) => {
             rel='noreferrer'
             id='props-basichomely'
             data-tooltip-content='Go to website!'
-            data-tooltip-place={`${window.innerWidth > 992 ? "right" : "top"}`}
+            data-tooltip-place={`${window.innerWidth > 992 ? "top" : "top"}`}
           >
             <Tooltip anchorId='props-basichomely' />
 
@@ -240,8 +241,8 @@ const Works = forwardRef((props, ref) => {
           <div className='app__singlework-text-lang'>
             <div className='single-lang'>React</div>
             <div className='single-lang'>MongoDB</div>
+            <div className='single-lang'>styled-components</div>
             <div className='single-lang'>NodeJS</div>
-            <div className='single-lang'>React</div>
           </div>
           <div className='app__singlework-text-icons'>
             <div className='app__singlework-text-icons-icon'>
@@ -251,7 +252,7 @@ const Works = forwardRef((props, ref) => {
                 rel='noreferrer'
                 id='props-basic1222'
                 data-tooltip-content='Source code!'
-                data-tooltip-place='right'
+                data-tooltip-place='top'
               >
                 <Tooltip anchorId='props-basic1222' />
                 <motion.div
@@ -275,7 +276,7 @@ const Works = forwardRef((props, ref) => {
                 rel='noreferrer'
                 id='props-basic1libeye'
                 data-tooltip-content='Go to website!'
-                data-tooltip-place='right'
+                data-tooltip-place='top'
               >
                 <Tooltip anchorId='props-basic1libeye' />
                 <motion.div
@@ -305,7 +306,7 @@ const Works = forwardRef((props, ref) => {
             rel='noreferrer'
             id='props-basicznajdz'
             data-tooltip-content='Go to website!'
-            data-tooltip-place={`${window.innerWidth > 992 ? "right" : "top"}`}
+            data-tooltip-place={`${window.innerWidth > 992 ? "top" : "top"}`}
           >
             <Tooltip anchorId='props-basicznajdz' />
 
@@ -359,7 +360,7 @@ const Works = forwardRef((props, ref) => {
                 rel='noreferrer'
                 id='props-basiclibrary'
                 data-tooltip-content='Source code!'
-                data-tooltip-place='right'
+                data-tooltip-place='top'
               >
                 <Tooltip anchorId='props-basiclibrary' />
                 <motion.div
@@ -383,7 +384,7 @@ const Works = forwardRef((props, ref) => {
                 rel='noreferrer'
                 id='props-basiclibrarybeye'
                 data-tooltip-content='Go to website!'
-                data-tooltip-place='right'
+                data-tooltip-place='top'
               >
                 <Tooltip anchorId='props-basiclibrarybeye' />
                 <motion.div
@@ -413,7 +414,7 @@ const Works = forwardRef((props, ref) => {
             rel='noreferrer'
             id='props-basicbiblie'
             data-tooltip-content='Go to website!'
-            data-tooltip-place={`${window.innerWidth > 992 ? "right" : "top"}`}
+            data-tooltip-place={`${window.innerWidth > 992 ? "top" : "top"}`}
           >
             <Tooltip anchorId='props-basicbiblie' />
 
@@ -463,7 +464,7 @@ const Works = forwardRef((props, ref) => {
                 rel='noreferrer'
                 id='props-basicholcareye'
                 data-tooltip-content='Go to website!'
-                data-tooltip-place='right'
+                data-tooltip-place='top'
               >
                 <Tooltip anchorId='props-basicholcareye' />
                 <motion.div
@@ -493,7 +494,7 @@ const Works = forwardRef((props, ref) => {
             rel='noreferrer'
             id='props-basicholcarcz'
             data-tooltip-content='Go to website!'
-            data-tooltip-place={`${window.innerWidth > 992 ? "right" : "top"}`}
+            data-tooltip-place={`${window.innerWidth > 992 ? "top" : "top"}`}
           >
             <Tooltip anchorId='props-basicholcarcz' />
 
