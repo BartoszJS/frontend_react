@@ -66,7 +66,13 @@ const Contact = forwardRef((props, ref) => {
                 {" "}
                 <CgPushChevronDownO />
               </div>
-              <div className='phone-text'> Download CV</div>
+              <a
+                className='phone-text'
+                href='./Bartosz_Płaza_CV_ENG.pdf'
+                download
+              >
+                Downolad CV
+              </a>
             </div>
           </div>
         </div>

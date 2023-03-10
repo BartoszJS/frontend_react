@@ -64,10 +64,10 @@ const About = () => {
                   <h4>I'm Bartosz Płaza.</h4>
                   <p>
                     <span className='yellow'>Education</span>: IT, engineering
-                    studies.
+                    studies
                     <p>
                       Academic scholarship throughout the studies for good
-                      academic performance
+                      academic performance.
                     </p>
                   </p>
                   <p>
