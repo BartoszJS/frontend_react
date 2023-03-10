@@ -72,8 +72,8 @@ const About = () => {
                 <div>
                   <h4>Nazywam się Bartosz Płaza.</h4>
                   <p>
-                    <span className='yellow'>Wykształcenie</span>: wyższe,
-                    kierunek: informatyka.
+                    <span className='yellow'>Wykształcenie</span>: Informatyka,
+                    studia inżynierskie
                     <p>
                       Stypendium naukowe przez cały przebieg studiów za
                       wyróżniające wyniki w nauce

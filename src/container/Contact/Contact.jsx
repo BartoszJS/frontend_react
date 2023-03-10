@@ -37,7 +37,7 @@ const Contact = forwardRef((props, ref) => {
                 {" "}
                 <MdOutlineMarkEmailUnread />
               </div>
-              <div className='phone-text'>bartosz290300@wp.pl</div>
+              <div className='phone-text'>bartosz-plaza@wp.pl</div>
             </div>
           </div>
         </div>
@@ -67,7 +67,13 @@ const Contact = forwardRef((props, ref) => {
                 {" "}
                 <CgPushChevronDownO />
               </div>
-              <div className='phone-text'> Pobierz CV</div>
+              <a
+                className='phone-text'
+                href='./Bartosz_Płaza_CV_PL.pdf'
+                download
+              >
+                Pobierz CV
+              </a>
             </div>
           </div>
         </div>

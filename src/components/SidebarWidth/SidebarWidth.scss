@@ -66,7 +66,20 @@
   }
   .description {
     padding-top: 0.5rem;
+    color: rgb(188, 188, 188);
+  }
+  .description2 {
+    padding-top: 0.5rem;
     color: grey;
+  }
+  .flexDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .emailCont {
+      padding-top: 5px;
+      padding-right: 1px;
+    }
   }
 }
 .app__sidebar-data {

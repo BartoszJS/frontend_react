@@ -141,7 +141,7 @@ const Timeline = () => {
                 Kurs Typescript
               </h3>
               <p>Długość kursu: 10,5h</p>
-              <p>01.2022</p>
+              <p>01.2023</p>
             </div>
             <div className='vertical-timeline-element--work-flex-button'>
               <img
