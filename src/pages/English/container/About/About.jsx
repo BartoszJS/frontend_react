@@ -63,8 +63,8 @@ const About = () => {
                 <div>
                   <h4>I'm Bartosz Płaza.</h4>
                   <p>
-                    <span className='yellow'>Education</span>: higher, Engineer,
-                    field of IT.
+                    <span className='yellow'>Education</span>: IT, engineering
+                    studies.
                     <p>
                       Academic scholarship throughout the studies for good
                       academic performance
